@@ -19,7 +19,7 @@ jobs:
             - name: Rename downloaded fontello package
               run: |
                   mv fontello* fontello
-                  cp iconGlyphs.ts ./fontello
+                  cp ./build/IconGlyphs.js ./fontello
             - name: Archive artifacts
               uses: actions/upload-artifact@v2
               with:
