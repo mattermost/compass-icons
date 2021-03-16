@@ -74,16 +74,21 @@ export const writeJSONToDisk = (fileName = 'config.json', fileData = {}) => {
 };
 
 export const writeToDisk = (fileName, fileData) => {
+    const fileNameComponents = fileName.split('/');
+    if (fileNameComponents.length > 2) {
+        const folderPath = fileNameComponents.slice(0, -1).join('/');
+        if (!fs.existsSync(folderPath)) {
+            fs.mkdirSync(folderPath);
+        }
+    }
+
     try {
         fs.unlinkSync(fileName);
     } catch (error) {
         // ignore
     }
-    fs.writeFileSync(fileName,
-        fileData,
-        {
-            encoding: 'utf-8',
-            flag: 'w',
-        }
-    );
-}
+    fs.writeFileSync(fileName, fileData, {
+        encoding: 'utf-8',
+        flag: 'w',
+    });
+};

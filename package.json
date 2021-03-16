@@ -6,7 +6,7 @@
     "main": "build/css/compass-icons.css",
     "scripts": {
         "start": "npm run build",
-        "clean": "rm -rf config.json iconData.ts build fontello* node_modules",
+        "clean": "rm -rf config.json build .fontello-session fontello* node_modules",
         "build": "run-s build:data build:font",
         "build:data": "node -r esm generate-data.js",
         "build:font": "fontello-cli --css ./build/css --font ./build/font install",

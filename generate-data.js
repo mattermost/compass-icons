@@ -20,14 +20,20 @@ writeJSONToDisk('config.json', configData);
 
 // generate icon glyph data
 
-const iconGlyphs = configData.glyphs.map(({css}) => `    ${css.toUpperCase().split('-').join('_')}: '${css}',`);
+const iconGlyphs = configData.glyphs.map(
+    ({ css }) =>
+        `    ${css
+            .split('-')
+            .map((word, index) => (index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)))
+            .join('')}: '${css}',`
+);
 
 const iconGlyphsData = `
 export const IconGlyphs = {
-${iconGlyphs.join("\n")}
+${iconGlyphs.join('\n')}
 };
 
 export type IconGlyph = keyof typeof IconGlyphs;
 `;
 
-writeToDisk('iconGlyphs.ts', iconGlyphsData);
+writeToDisk('./build/IconGlyphs.ts', iconGlyphsData);
