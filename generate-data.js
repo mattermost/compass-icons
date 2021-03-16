@@ -32,8 +32,6 @@ const iconGlyphsData = `
 export const IconGlyphs = {
 ${iconGlyphs.join('\n')}
 };
-
-export type IconGlyph = keyof typeof IconGlyphs;
 `;
 
-writeToDisk('./build/IconGlyphs.ts', iconGlyphsData);
+writeToDisk('./build/IconGlyphs.js', iconGlyphsData);
