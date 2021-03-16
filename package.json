@@ -13,7 +13,8 @@
         "open": "run-s build:data open:font",
         "open:font": "fontello-cli open",
         "package": "run-s build:data package:font",
-        "package:font": "fontello-cli install"
+        "package:font": "fontello-cli install",
+        "postinstall": "npm run build"
     },
     "keywords": [
         "mattermost",
