@@ -34,4 +34,4 @@ ${iconGlyphs.join('\n')}
 };
 `;
 
-writeToDisk('./build/IconGlyphs.js', iconGlyphsData);
+writeToDisk('./build/IconGlyphs.ts', iconGlyphsData);
