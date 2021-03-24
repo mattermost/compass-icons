@@ -16,22 +16,20 @@ const configData = {
     glyphs,
 };
 
+// write to root for fontelle-cli to retrieve
 writeJSONToDisk('config.json', configData);
+
+// write to build folder
+writeJSONToDisk('./build/config.json', configData);
 
 // generate icon glyph data
 
-const iconGlyphs = configData.glyphs.map(
-    ({ css }) =>
-        `    ${css
-            .split('-')
-            .map((word, index) => (index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)))
-            .join('')}: '${css}',`
-);
+const iconGlyphs = configData.glyphs.map(({ css }) => `\t'${css}',`);
 
 const iconGlyphsData = `
-export const IconGlyphs = {
+export const IconGlyphs = [
 ${iconGlyphs.join('\n')}
-};
+];
 `;
 
 writeToDisk('./build/IconGlyphs.ts', iconGlyphsData);
