@@ -27,7 +27,8 @@ writeJSONToDisk('./build/config.json', configData);
 const iconGlyphs = configData.glyphs.map(({ css }) => `\t'${css}',`);
 
 const iconGlyphsData = `
-export const IconGlyphs = [
+export type IconGlyphTypes = ${iconGlyphs.map(glyph => glyph.trim().slice(0, -1)).join(' | ')};
+export const IconGlyphs: IconGlyphTypes[] = [
 ${iconGlyphs.join('\n')}
 ];
 `;
