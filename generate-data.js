@@ -26,11 +26,19 @@ writeJSONToDisk('./build/config.json', configData);
 
 const iconGlyphs = configData.glyphs.map(({ css }) => `\t'${css}',`);
 
-const iconGlyphsData = `
-export type IconGlyphTypes = ${iconGlyphs.map(glyph => glyph.trim().slice(0, -1)).join(' | ')};
-export const IconGlyphs: IconGlyphTypes[] = [
-${iconGlyphs.join('\n')}
-];
+const iconGlyphsTypeData = `export declare type IconGlyphTypes = ${iconGlyphs
+    .map((glyph) => glyph.trim().slice(0, -1))
+    .join(' | ')};
+declare const IconGlyphs: IconGlyphTypes[];
+export default IconGlyphs;
 `;
 
-writeToDisk('./build/IconGlyphs.ts', iconGlyphsData);
+writeToDisk('./build/IconGlyphs.d.ts', iconGlyphsTypeData);
+
+const iconGlyphsData = `const IconGlyphs = [
+${iconGlyphs.join('\n')}
+];
+export default IconGlyphs;
+`;
+
+writeToDisk('./build/IconGlyphs.js', iconGlyphsData);
