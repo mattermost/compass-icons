@@ -59,18 +59,36 @@ Simple steps to adding new icons to the Compass Icons font
 -   If you open up the demo.html from the repository root and click on "show codes" you'll be able to look through the "E900" block to determine the next available code in the sequence.
 -   As you can see in the example above "E90B" is the last icon in that "E900" block, so your icons character code should be "E90C"
 
-## Move and rename
+## Rename the SVG
 
--   Move the downloaded or optimized svg file into the "svgs" folder in the repository location (google drive location linked above)
--   Append the identified hexadecimal character code to the filename after a pipe character e.g. "account-outline|F0013.svg"
+-   Append the identified hexadecimal character code to the filename after a pipe character e.g. "account-outline|F0013.svg".
 
-## Import a new font
+## Import into Github Repository 
 
-#### Add your new icon to the font
+#### Upload your font file to the SVG folder
 
-- [add instructions here]
+-   In your browser navigate to the 'svgs' subfolder of the compass-icons repo
+-   https://github.com/mattermost/compass-icons/tree/master/svgs
+-   Click Add file > Upload files
+-   Choose or drag your SVG file to add it to the repository
+-   Fill out the commit description specifying what icon you are adding to the repository and why
+-   When everything looks accurate, click on the green "Commit changes" button
+-   Add any of designers the UX Team at Mattermost as a reviewer (e.g. @andrewbrown00, @mathewbirtch, @abhijit-singh, @anneliseklein, @michaelgamble)
+-   When all the information looks accurate, click the green "Create pull request" button.
+  
+#### Font icon package creation
+-   At this point you are waiting for the approval of the pull request
+-   When the commit is approved by a member of the design team the font package will automatically be created and is ready to download for use (you will get a github notificaiton when approved)
+  
+#### Download font package
+-   Navigate to the root of the compass-icon repository
+-   https://github.com/mattermost/compass-icons/
+-   Click on the "Actions" tab
+-   Click on the latest "workflow run" that should match your commit title from the previous step.
+-   Under the "Artifacts" section, you will see the "CompassIconFont" package, click it to download locally.
 
-## Update The Repository
+## Update the Google Drive Folder
 
-- [Aad instructions here]
+-   In your local download folder, double click the file "CompassIconFont.zip" to extract the files
+-   Cut, paste, and overwrite the contents of the archive into the [google drive folder](https://drive.google.com/open?id=1PbbhRVmXOI5BzC305qa42OjMtaVlLEYM&authuser=michael.gamble%40mattermost.com&usp=drive_fs).
 -   Once the repository is updated, make a post in the Mattermost "[Compass Design System](https://community-daily.mattermost.com/core/channels/compass-design-system)" channel mentioning the "@uxteam" asking for the font to be updated in Figma
