@@ -26,7 +26,7 @@ jobs:
             - name: build component library
               run: npm run build
             - name: publish to npm
-              working-directory: ./lib
+              working-directory: ./build
               run: npm publish --access public
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
