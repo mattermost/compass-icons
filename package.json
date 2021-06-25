@@ -26,6 +26,7 @@
         "esm": "^3.2.25",
         "fontello-batch-cli": "^4.0.0",
         "fontello-cli": "^0.6.2",
+        "fs-extra": "^10.0.0",
         "lodash": "^4.17.21",
         "needle": "^2.6.0",
         "open": "^7.4.2",

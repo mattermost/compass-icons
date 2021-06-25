@@ -1,10 +1,18 @@
+'use strict';
+
+const path = require('path');
+
+const fse = require('fs-extra');
+
 import { getFileData, generateGlyphs, writeJSONToDisk, writeToDisk } from './utils';
 
 // generate config data used to generate the font icon
 
 const files = getFileData('./svgs');
-
 const glyphs = generateGlyphs(files);
+
+const packagePath = process.cwd();
+const buildPath = path.join(packagePath, './build');
 
 const configData = {
     name: 'compass-icons',
@@ -42,3 +50,31 @@ export default IconGlyphs;
 `;
 
 writeToDisk('./build/IconGlyphs.js', iconGlyphsData);
+
+async function createPackageFile() {
+    const packageData = await fse.readFile(path.resolve(packagePath, './package.json'), 'utf8');
+    const {
+        nyc,
+        scripts,
+        devDependencies,
+        husky,
+        workspaces,
+        'lint-staged': lintStaged,
+        files,
+        main,
+        ...packageDataOther
+    } = JSON.parse(packageData);
+
+    const newPackageData = {
+        ...packageDataOther,
+        main: 'css/compass-icons.css',
+        private: false,
+    };
+
+    const targetPath = path.resolve(buildPath, './package.json');
+
+    await fse.writeFile(targetPath, JSON.stringify(newPackageData, null, 2), 'utf8');
+    console.log(`Created package.json in ${targetPath}`);
+}
+
+createPackageFile().then(() => console.log('### Finished creating the project files'));
