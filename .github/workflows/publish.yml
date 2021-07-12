@@ -1,9 +1,10 @@
 name: build and publish
 
-# This action will trigger on every release get created
+# This action will trigger on every published release
 on:
-    create:
-        tag: [created]
+  release:
+    types:
+      - published
 
 # Job will run on a ubuntu instance
 jobs:
