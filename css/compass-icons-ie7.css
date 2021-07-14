@@ -23,7 +23,6 @@
 .icon-server-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80a;&nbsp;'); }
 .icon-slash-forward-box-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80b;&nbsp;'); }
 .icon-webhook-incoming { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80c;&nbsp;'); }
-.icon-share-variant-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80d;&nbsp;'); }
 .icon-webhook-outgoing { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80d;&nbsp;'); }
 .icon-image-area-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80e;&nbsp;'); }
 .icon-emoticon-plus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80f;&nbsp;'); }
@@ -243,3 +242,4 @@
 .icon-message-minus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf116f;&nbsp;'); }
 .icon-crown-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf11d0;&nbsp;'); }
 .icon-folder-move-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1246;&nbsp;'); }
+.icon-share-variant-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1514;&nbsp;'); }

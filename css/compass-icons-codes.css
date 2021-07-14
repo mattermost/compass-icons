@@ -13,7 +13,6 @@
 .icon-server-outline:before { content: '\e80a'; } /* '' */
 .icon-slash-forward-box-outline:before { content: '\e80b'; } /* '' */
 .icon-webhook-incoming:before { content: '\e80c'; } /* '' */
-.icon-share-variant-outline:before { content: '\e80d'; } /* '' */
 .icon-webhook-outgoing:before { content: '\e80d'; } /* '' */
 .icon-image-area-outline:before { content: '\e80e'; } /* '' */
 .icon-emoticon-plus-outline:before { content: '\e80f'; } /* '' */
@@ -233,3 +232,4 @@
 .icon-message-minus-outline:before { content: '󱅯'; } /* '\f116f' */
 .icon-crown-outline:before { content: '󱇐'; } /* '\f11d0' */
 .icon-folder-move-outline:before { content: '󱉆'; } /* '\f1246' */
+.icon-share-variant-outline:before { content: '󱔔'; } /* '\f1514' */
