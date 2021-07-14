@@ -210,6 +210,7 @@ const IconGlyphs = [
 	'server-variant-plus',
 	'server-variant',
 	'settings-outline',
+	'share-variant-outline',
 	'shield-alert-outline',
 	'shield-outline',
 	'sitemap',
