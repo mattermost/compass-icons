@@ -44,6 +44,9 @@
 .icon-file-patch-outline:before { content: '\e829'; } /* '' */
 .icon-file-multiple-outline-large:before { content: '\e82a'; } /* '' */
 .icon-file-image-broken-outline:before { content: '\e82b'; } /* '' */
+.icon-product-channels:before { content: '\e82c'; } /* '' */
+.icon-product-playbooks:before { content: '\e82d'; } /* '' */
+.icon-product-boards:before { content: '\e82e'; } /* '' */
 .icon-car-outline:before { content: '\e899'; } /* '' */
 .icon-file-text-outline-large:before { content: '\e900'; } /* '' */
 .icon-file-word-outline-large:before { content: '\e901'; } /* '' */
