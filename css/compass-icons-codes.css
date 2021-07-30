@@ -47,6 +47,7 @@
 .icon-product-channels:before { content: '\e82c'; } /* '' */
 .icon-product-playbooks:before { content: '\e82d'; } /* '' */
 .icon-product-boards:before { content: '\e82e'; } /* '' */
+.icon-products:before { content: '\e82f'; } /* '' */
 .icon-car-outline:before { content: '\e899'; } /* '' */
 .icon-file-text-outline-large:before { content: '\e900'; } /* '' */
 .icon-file-word-outline-large:before { content: '\e901'; } /* '' */
@@ -189,7 +190,7 @@
 .icon-send-outline:before { content: '󰆐'; } /* '\f0190' */
 .icon-credit-card-outline:before { content: '󰆛'; } /* '\f019b' */
 .icon-drag-vertical:before { content: '󰇝'; } /* '\f01dd' */
-.icon-view-grid-outline:before { content: '󰈄'; } /* '\f0204' */
+.icon-apps:before { content: '󰈄'; } /* '\f0204' */
 .icon-exit-to-app:before { content: '󰈆'; } /* '\f0206' */
 .icon-file-generic-outline:before { content: '󰈤'; } /* '\f0224' */
 .icon-folder-outline:before { content: '󰉖'; } /* '\f0256' */

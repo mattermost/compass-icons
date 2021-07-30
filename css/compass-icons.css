@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'compass-icons';
-  src: url('../font/compass-icons.eot?78586228');
-  src: url('../font/compass-icons.eot?78586228#iefix') format('embedded-opentype'),
-       url('../font/compass-icons.woff2?78586228') format('woff2'),
-       url('../font/compass-icons.woff?78586228') format('woff'),
-       url('../font/compass-icons.ttf?78586228') format('truetype'),
-       url('../font/compass-icons.svg?78586228#compass-icons') format('svg');
+  src: url('../font/compass-icons.eot?94622077');
+  src: url('../font/compass-icons.eot?94622077#iefix') format('embedded-opentype'),
+       url('../font/compass-icons.woff2?94622077') format('woff2'),
+       url('../font/compass-icons.woff?94622077') format('woff'),
+       url('../font/compass-icons.ttf?94622077') format('truetype'),
+       url('../font/compass-icons.svg?94622077#compass-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'compass-icons';
-    src: url('../font/compass-icons.svg?78586228#compass-icons') format('svg');
+    src: url('../font/compass-icons.svg?94622077#compass-icons') format('svg');
   }
 }
 */
@@ -102,6 +102,7 @@
 .icon-product-channels:before { content: '\e82c'; } /* '' */
 .icon-product-playbooks:before { content: '\e82d'; } /* '' */
 .icon-product-boards:before { content: '\e82e'; } /* '' */
+.icon-products:before { content: '\e82f'; } /* '' */
 .icon-car-outline:before { content: '\e899'; } /* '' */
 .icon-file-text-outline-large:before { content: '\e900'; } /* '' */
 .icon-file-word-outline-large:before { content: '\e901'; } /* '' */
@@ -244,7 +245,7 @@
 .icon-send-outline:before { content: '󰆐'; } /* '\f0190' */
 .icon-credit-card-outline:before { content: '󰆛'; } /* '\f019b' */
 .icon-drag-vertical:before { content: '󰇝'; } /* '\f01dd' */
-.icon-view-grid-outline:before { content: '󰈄'; } /* '\f0204' */
+.icon-apps:before { content: '󰈄'; } /* '\f0204' */
 .icon-exit-to-app:before { content: '󰈆'; } /* '\f0206' */
 .icon-file-generic-outline:before { content: '󰈤'; } /* '\f0224' */
 .icon-folder-outline:before { content: '󰉖'; } /* '\f0256' */
