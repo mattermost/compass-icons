@@ -242,6 +242,7 @@
 .icon-shield-alert-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ecd;&nbsp;'); }
 .icon-slash-forward { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0fdf;&nbsp;'); }
 .icon-file-multiple-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1032;&nbsp;'); }
+.icon-dock-window { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10ac;&nbsp;'); }
 .icon-message-plus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10bb;&nbsp;'); }
 .icon-message-minus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf116f;&nbsp;'); }
 .icon-crown-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf11d0;&nbsp;'); }

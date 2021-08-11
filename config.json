@@ -945,6 +945,20 @@
       ]
     },
     {
+      "uid": "b136d02a8b1bd7ba684c00f79075e2a5",
+      "css": "dock-window",
+      "code": 987308,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M750 750V833.3H166.7A83.3 83.3 0 0 1 83.3 750V333.3H166.7V750M916.7 250V583.3A83.3 83.3 0 0 1 833.3 666.7H333.3A83.3 83.3 0 0 1 250 583.3V250A83.3 83.3 0 0 1 333.3 166.7H833.3A83.3 83.3 0 0 1 916.7 250M833.3 250H333.3V583.3H833.3Z",
+        "width": 1000
+      },
+      "search": [
+        "dock-window"
+      ]
+    },
+    {
       "uid": "df40d6e99fcaf73b31d2c7e51da9858c",
       "css": "dots-horizontal",
       "code": 61912,

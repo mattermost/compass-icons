@@ -470,6 +470,8 @@
 
 <glyph glyph-name="file-multiple-outline" unicode="&#xf1032;" d="M667 850h-334c-45 0-83-37-83-83v-667c0-46 38-83 83-83h500c46 0 84 37 84 83v500l-250 250m166-750h-500v667h292v-209h208v-458m-666 583v-750h666v-83h-666c-46 0-84 37-84 83v750h84z" horiz-adv-x="1000" />
 
+<glyph glyph-name="dock-window" unicode="&#xf10ac;" d="M750 100v-83h-583a83 83 0 0 0-84 83v417h84v-417m750 500v-333a83 83 0 0 0-84-84h-500a83 83 0 0 0-83 84v333a83 83 0 0 0 83 83h500a83 83 0 0 0 84-83m-84 0h-500v-333h500z" horiz-adv-x="1000" />
+
 <glyph glyph-name="message-plus-outline" unicode="&#xf10bb;" d="M833 767h-666c-46 0-84-38-84-84v-750l167 167h583c46 0 84 38 84 83v500c0 46-38 84-84 84m0-584h-583l-83-83v583h666m-166-208v-83h-125v-125h-84v125h-125v83h125v125h84v-125h125z" horiz-adv-x="1000" />
 
 <glyph glyph-name="message-minus-outline" unicode="&#xf116f;" d="M833 767h-666c-46 0-84-38-84-84v-750l167 167h583c47 0 84 37 84 83v500c0 46-37 84-84 84m0-584h-583l-83-83v583h666m-500-208v-83h334v83h-334z" horiz-adv-x="1000" />

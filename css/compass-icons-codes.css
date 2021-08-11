@@ -232,6 +232,7 @@
 .icon-shield-alert-outline:before { content: '󰻍'; } /* '\f0ecd' */
 .icon-slash-forward:before { content: '󰿟'; } /* '\f0fdf' */
 .icon-file-multiple-outline:before { content: '󱀲'; } /* '\f1032' */
+.icon-dock-window:before { content: '󱂬'; } /* '\f10ac' */
 .icon-message-plus-outline:before { content: '󱂻'; } /* '\f10bb' */
 .icon-message-minus-outline:before { content: '󱅯'; } /* '\f116f' */
 .icon-crown-outline:before { content: '󱇐'; } /* '\f11d0' */

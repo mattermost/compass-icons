@@ -66,6 +66,7 @@ const IconGlyphs = [
 	'credit-card-outline',
 	'crown-outline',
 	'dock-left',
+	'dock-window',
 	'dots-horizontal',
 	'dots-vertical',
 	'download-outline',
