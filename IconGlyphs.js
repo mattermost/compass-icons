@@ -20,6 +20,7 @@ const IconGlyphs = [
 	'arrow-left',
 	'arrow-right-bold-outline',
 	'arrow-right',
+	'arrow-up-bold-circle-outline',
 	'arrow-up',
 	'at',
 	'basketball',
