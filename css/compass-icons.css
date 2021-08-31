@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'compass-icons';
-  src: url('../font/compass-icons.eot?59569442');
-  src: url('../font/compass-icons.eot?59569442#iefix') format('embedded-opentype'),
-       url('../font/compass-icons.woff2?59569442') format('woff2'),
-       url('../font/compass-icons.woff?59569442') format('woff'),
-       url('../font/compass-icons.ttf?59569442') format('truetype'),
-       url('../font/compass-icons.svg?59569442#compass-icons') format('svg');
+  src: url('../font/compass-icons.eot?83250514');
+  src: url('../font/compass-icons.eot?83250514#iefix') format('embedded-opentype'),
+       url('../font/compass-icons.woff2?83250514') format('woff2'),
+       url('../font/compass-icons.woff?83250514') format('woff'),
+       url('../font/compass-icons.ttf?83250514') format('truetype'),
+       url('../font/compass-icons.svg?83250514#compass-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'compass-icons';
-    src: url('../font/compass-icons.svg?59569442#compass-icons') format('svg');
+    src: url('../font/compass-icons.svg?83250514#compass-icons') format('svg');
   }
 }
 */
@@ -218,7 +218,6 @@
 .icon-bell-off-outline:before { content: '\fa90'; } /* '敖' */
 .icon-chevron-down-circle-outline:before { content: '\fb0c'; } /* '﬌' */
 .icon-format-letter-case:before { content: '\fb19'; } /* '﬙' */
-.icon-download-outline:before { content: '\fb6b'; } /* 'ﭫ' */
 .icon-video-outline:before { content: '\fbb8'; } /* '﮸' */
 .icon-pencil-outline:before { content: '\fc92'; } /* 'ﲒ' */
 .icon-camera-outline:before { content: '\fd39'; } /* 'ﴹ' */
@@ -279,6 +278,7 @@
 .icon-trash-can-outline:before { content: '󰩺'; } /* '\f0a7a' */
 .icon-account-minus-outline:before { content: '󰫬'; } /* '\f0aec' */
 .icon-calendar-outline:before { content: '󰭧'; } /* '\f0b67' */
+.icon-download-outline:before { content: '󰮏'; } /* '\f0b8f' */
 .icon-export-variant:before { content: '󰮓'; } /* '\f0b93' */
 .icon-folder-plus-outline:before { content: '󰮝'; } /* '\f0b9d' */
 .icon-home-variant-outline:before { content: '󰮧'; } /* '\f0ba7' */

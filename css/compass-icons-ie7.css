@@ -173,7 +173,6 @@
 .icon-bell-off-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xfa90;&nbsp;'); }
 .icon-chevron-down-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xfb0c;&nbsp;'); }
 .icon-format-letter-case { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xfb19;&nbsp;'); }
-.icon-download-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xfb6b;&nbsp;'); }
 .icon-video-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xfbb8;&nbsp;'); }
 .icon-pencil-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xfc92;&nbsp;'); }
 .icon-camera-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xfd39;&nbsp;'); }
@@ -234,6 +233,7 @@
 .icon-trash-can-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a7a;&nbsp;'); }
 .icon-account-minus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0aec;&nbsp;'); }
 .icon-calendar-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b67;&nbsp;'); }
+.icon-download-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b8f;&nbsp;'); }
 .icon-export-variant { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b93;&nbsp;'); }
 .icon-folder-plus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b9d;&nbsp;'); }
 .icon-home-variant-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ba7;&nbsp;'); }

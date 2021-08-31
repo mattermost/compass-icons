@@ -163,7 +163,6 @@
 .icon-bell-off-outline:before { content: '\fa90'; } /* '敖' */
 .icon-chevron-down-circle-outline:before { content: '\fb0c'; } /* '﬌' */
 .icon-format-letter-case:before { content: '\fb19'; } /* '﬙' */
-.icon-download-outline:before { content: '\fb6b'; } /* 'ﭫ' */
 .icon-video-outline:before { content: '\fbb8'; } /* '﮸' */
 .icon-pencil-outline:before { content: '\fc92'; } /* 'ﲒ' */
 .icon-camera-outline:before { content: '\fd39'; } /* 'ﴹ' */
@@ -224,6 +223,7 @@
 .icon-trash-can-outline:before { content: '󰩺'; } /* '\f0a7a' */
 .icon-account-minus-outline:before { content: '󰫬'; } /* '\f0aec' */
 .icon-calendar-outline:before { content: '󰭧'; } /* '\f0b67' */
+.icon-download-outline:before { content: '󰮏'; } /* '\f0b8f' */
 .icon-export-variant:before { content: '󰮓'; } /* '\f0b93' */
 .icon-folder-plus-outline:before { content: '󰮝'; } /* '\f0b9d' */
 .icon-home-variant-outline:before { content: '󰮧'; } /* '\f0ba7' */
