@@ -194,6 +194,7 @@
 .icon-bookmark { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00c0;&nbsp;'); }
 .icon-bookmark-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00c3;&nbsp;'); }
 .icon-dock-left { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00d5;&nbsp;'); }
+.icon-check-all { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf012d;&nbsp;'); }
 .icon-chevron-up { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0143;&nbsp;'); }
 .icon-close-circle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0159;&nbsp;'); }
 .icon-content-copy { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf018f;&nbsp;'); }

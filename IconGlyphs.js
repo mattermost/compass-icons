@@ -42,6 +42,7 @@ const IconGlyphs = [
 	'cellphone',
 	'chart-bar',
 	'chart-line',
+	'check-all',
 	'check-circle-outline',
 	'check-circle',
 	'check',

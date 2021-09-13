@@ -184,6 +184,7 @@
 .icon-bookmark:before { content: '󰃀'; } /* '\f00c0' */
 .icon-bookmark-outline:before { content: '󰃃'; } /* '\f00c3' */
 .icon-dock-left:before { content: '󰃕'; } /* '\f00d5' */
+.icon-check-all:before { content: '󰄭'; } /* '\f012d' */
 .icon-chevron-up:before { content: '󰅃'; } /* '\f0143' */
 .icon-close-circle:before { content: '󰅙'; } /* '\f0159' */
 .icon-content-copy:before { content: '󰆏'; } /* '\f018f' */
