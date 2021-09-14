@@ -238,5 +238,6 @@
 .icon-message-plus-outline:before { content: '󱂻'; } /* '\f10bb' */
 .icon-message-minus-outline:before { content: '󱅯'; } /* '\f116f' */
 .icon-crown-outline:before { content: '󱇐'; } /* '\f11d0' */
+.icon-view-grid-plus-outline:before { content: '󱇚'; } /* '\f11da' */
 .icon-folder-move-outline:before { content: '󱉆'; } /* '\f1246' */
 .icon-share-variant-outline:before { content: '󱔔'; } /* '\f1514' */

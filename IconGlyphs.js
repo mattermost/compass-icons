@@ -236,6 +236,7 @@ const IconGlyphs = [
 	'tune',
 	'update',
 	'video-outline',
+	'view-grid-plus-outline',
 	'webhook-incoming',
 	'webhook-outgoing',
 	'webhook',

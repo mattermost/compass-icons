@@ -3325,6 +3325,20 @@
       ]
     },
     {
+      "uid": "a5baa5807c25e40c580b67909878774c",
+      "css": "view-grid-plus-outline",
+      "code": 987610,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M125 875H458.3V541.7H125M208.3 625H375V791.7H208.3M125 458.3H458.3V125H125M208.3 208.3H375V375H208.3M541.7 125V458.3H875V125M791.7 375H625V208.3H791.7M750 666.7H875V750H750V875H666.7V750H541.7V666.7H666.7V541.7H750Z",
+        "width": 1000
+      },
+      "search": [
+        "view-grid-plus-outline"
+      ]
+    },
+    {
       "uid": "3e4fbd639dd429f5194f5304590723fd",
       "css": "webhook-incoming",
       "code": 59404,
