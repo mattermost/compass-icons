@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'compass-icons';
-  src: url('../font/compass-icons.eot?26325315');
-  src: url('../font/compass-icons.eot?26325315#iefix') format('embedded-opentype'),
-       url('../font/compass-icons.woff2?26325315') format('woff2'),
-       url('../font/compass-icons.woff?26325315') format('woff'),
-       url('../font/compass-icons.ttf?26325315') format('truetype'),
-       url('../font/compass-icons.svg?26325315#compass-icons') format('svg');
+  src: url('../font/compass-icons.eot?78965676');
+  src: url('../font/compass-icons.eot?78965676#iefix') format('embedded-opentype'),
+       url('../font/compass-icons.woff2?78965676') format('woff2'),
+       url('../font/compass-icons.woff?78965676') format('woff'),
+       url('../font/compass-icons.ttf?78965676') format('truetype'),
+       url('../font/compass-icons.svg?78965676#compass-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'compass-icons';
-    src: url('../font/compass-icons.svg?26325315#compass-icons') format('svg');
+    src: url('../font/compass-icons.svg?78965676#compass-icons') format('svg');
   }
 }
 */
@@ -238,13 +238,11 @@
 .icon-apps:before { content: '󰀻'; } /* '\f003b' */
 .icon-arrow-down:before { content: '󰁅'; } /* '\f0045' */
 .icon-arrow-expand-all:before { content: '󰁌'; } /* '\f004c' */
-.icon-BRKN-file-code-outline:before { content: '󰁍'; } /* '\f004d' */
 .icon-arrow-left:before { content: '󰁍'; } /* '\f004d' */
 .icon-BRKN-file-excel-outline:before { content: '󰁏'; } /* '\f004f' */
 .icon-arrow-right:before { content: '󰁔'; } /* '\f0054' */
 .icon-BRKN-file-powerpoint-outline:before { content: '󰁗'; } /* '\f0057' */
 .icon-arrow-up:before { content: '󰁝'; } /* '\f005d' */
-.icon-BRKN-file-word-outline:before { content: '󰁠'; } /* '\f0060' */
 .icon-arrow-up-bold-circle-outline:before { content: '󰁠'; } /* '\f0060' */
 .icon-at:before { content: '󰁥'; } /* '\f0065' */
 .icon-flask-outline:before { content: '󰂖'; } /* '\f0096' */

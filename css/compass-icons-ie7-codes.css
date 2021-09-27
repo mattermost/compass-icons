@@ -182,13 +182,11 @@
 .icon-apps { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf003b;&nbsp;'); }
 .icon-arrow-down { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0045;&nbsp;'); }
 .icon-arrow-expand-all { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf004c;&nbsp;'); }
-.icon-BRKN-file-code-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf004d;&nbsp;'); }
 .icon-arrow-left { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf004d;&nbsp;'); }
 .icon-BRKN-file-excel-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf004f;&nbsp;'); }
 .icon-arrow-right { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0054;&nbsp;'); }
 .icon-BRKN-file-powerpoint-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0057;&nbsp;'); }
 .icon-arrow-up { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf005d;&nbsp;'); }
-.icon-BRKN-file-word-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0060;&nbsp;'); }
 .icon-arrow-up-bold-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0060;&nbsp;'); }
 .icon-at { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0065;&nbsp;'); }
 .icon-flask-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0096;&nbsp;'); }
