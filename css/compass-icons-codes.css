@@ -266,14 +266,19 @@
 .icon-menu-right:before { content: '󰍟'; } /* '\f035f' */
 .icon-menu-up:before { content: '󰍠'; } /* '\f0360' */
 .icon-message-text-outline:before { content: '󰍪'; } /* '\f036a' */
+.icon-microphone:before { content: '󰍬'; } /* '\f036c' */
+.icon-microphone-off:before { content: '󰍭'; } /* '\f036d' */
 .icon-minus:before { content: '󰍴'; } /* '\f0374' */
 .icon-minus-box:before { content: '󰍵'; } /* '\f0375' */
 .icon-minus-circle:before { content: '󰍶'; } /* '\f0376' */
 .icon-minus-circle-outline:before { content: '󰍷'; } /* '\f0377' */
+.icon-monitor:before { content: '󰍹'; } /* '\f0379' */
 .icon-brand-office-365:before { content: '󰏆'; } /* '\f03c6' */
 .icon-open-in-new:before { content: '󰏌'; } /* '\f03cc' */
 .icon-paperclip:before { content: '󰏢'; } /* '\f03e2' */
 .icon-pause:before { content: '󰏤'; } /* '\f03e4' */
+.icon-phone-hangup:before { content: '󰏵'; } /* '\f03f5' */
+.icon-phone-in-talk:before { content: '󰏶'; } /* '\f03f6' */
 .icon-pin:before { content: '󰐃'; } /* '\f0403' */
 .icon-play:before { content: '󰐊'; } /* '\f040a' */
 .icon-plus:before { content: '󰐕'; } /* '\f0415' */
@@ -289,7 +294,9 @@
 .icon-star:before { content: '󰓎'; } /* '\f04ce' */
 .icon-star-outline:before { content: '󰓒'; } /* '\f04d2' */
 .icon-sync:before { content: '󰓦'; } /* '\f04e6' */
+.icon-thumbs-up-down:before { content: '󰔕'; } /* '\f0515' */
 .icon-beach-umbrella-outline:before { content: '󰕋'; } /* '\f054b' */
+.icon-volume-high:before { content: '󰕾'; } /* '\f057e' */
 .icon-sort-alphabetical-ascending:before { content: '󰖽'; } /* '\f05bd' */
 .icon-playlist-check:before { content: '󰗇'; } /* '\f05c7' */
 .icon-alert-circle-outline:before { content: '󰗖'; } /* '\f05d6' */
@@ -340,6 +347,7 @@
 .icon-food-apple:before { content: '󰲄'; } /* '\f0c84' */
 .icon-pencil-outline:before { content: '󰲶'; } /* '\f0cb6' */
 .icon-camera-outline:before { content: '󰵝'; } /* '\f0d5d' */
+.icon-phone-outline:before { content: '󰷰'; } /* '\f0df0' */
 .icon-palette-outline:before { content: '󰸌'; } /* '\f0e0c' */
 .icon-file-video-outline:before { content: '󰸬'; } /* '\f0e2c' */
 .icon-hand-right:before { content: '󰹇'; } /* '\f0e47' */
