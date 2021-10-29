@@ -34,22 +34,17 @@ writeJSONToDisk('./build/config.json', configData);
 
 const iconGlyphs = configData.glyphs.map(({ css }) => `\t'${css}',`);
 
-const iconGlyphsTypeData = `export declare type IconGlyphTypes = ${iconGlyphs
-    .map((glyph) => glyph.trim().slice(0, -1))
-    .join(' | ')};
-declare const IconGlyphs: IconGlyphTypes[];
-export default IconGlyphs;
-`;
-
-writeToDisk('./build/IconGlyphs.d.ts', iconGlyphsTypeData);
-
-const iconGlyphsData = `const IconGlyphs = [
+const iconGlyphsData = `const IconGlyphs: IconGlyphTypes[] = [
 ${iconGlyphs.join('\n')}
 ];
+export type IconGlyphTypes = ${iconGlyphs
+    .map((glyph) => glyph.trim().slice(0, -1))
+    .join(' | ')};
+
 export default IconGlyphs;
 `;
 
-writeToDisk('./build/IconGlyphs.js', iconGlyphsData);
+writeToDisk('./IconGlyphs.ts', iconGlyphsData);
 
 async function createPackageFile() {
     const packageData = await fse.readFile(path.resolve(packagePath, './package.json'), 'utf8');
