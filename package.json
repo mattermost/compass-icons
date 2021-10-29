@@ -7,7 +7,7 @@
     "scripts": {
         "start": "npm run build",
         "clean": "rm -rf config.json build .fontello-session fontello* node_modules",
-        "build": "run-s build:data build:font build:typescript",
+        "build": "run-s build:data build:typescript build:font",
         "build:data": "node -r esm generate-data.js",
         "build:font": "fontello-cli --css ./build/css --font ./build/font install",
         "build:typescript": "tsc",
