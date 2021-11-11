@@ -132,6 +132,7 @@ const IconGlyphs = [
     'BRKN-webhook',
     'account-minus-outline',
     'account-multiple-outline',
+    'account-multiple-plus-outline',
     'account-outline',
     'account-plus-outline',
     'airplane-variant',
