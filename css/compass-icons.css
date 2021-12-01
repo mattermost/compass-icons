@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'compass-icons';
-  src: url('../font/compass-icons.eot?95360676');
-  src: url('../font/compass-icons.eot?95360676#iefix') format('embedded-opentype'),
-       url('../font/compass-icons.woff2?95360676') format('woff2'),
-       url('../font/compass-icons.woff?95360676') format('woff'),
-       url('../font/compass-icons.ttf?95360676') format('truetype'),
-       url('../font/compass-icons.svg?95360676#compass-icons') format('svg');
+  src: url('../font/compass-icons.eot?95606968');
+  src: url('../font/compass-icons.eot?95606968#iefix') format('embedded-opentype'),
+       url('../font/compass-icons.woff2?95606968') format('woff2'),
+       url('../font/compass-icons.woff?95606968') format('woff'),
+       url('../font/compass-icons.ttf?95606968') format('truetype'),
+       url('../font/compass-icons.svg?95606968#compass-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'compass-icons';
-    src: url('../font/compass-icons.svg?95360676#compass-icons') format('svg');
+    src: url('../font/compass-icons.svg?95606968#compass-icons') format('svg');
   }
 }
 */
