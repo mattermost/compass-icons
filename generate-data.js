@@ -112,10 +112,10 @@ const readAndWriteFiles = (item) => new Promise((resolve, reject) => {
 })
 
 const createComponentIndex = (files) => new Promise((resolve, reject) => {
-    const indexFile = `${files.map((item) => `import ${item.pascalName} from './${item.original}';`).join('\n')}
+    const indexFile = `${files.map((item) => `import ${item.pascalName}Icon from './${item.original}';`).join('\n')}
     
 export {
-    ${files.map((item) => `${item.pascalName},`).join('\n\t')}
+    ${files.map((item) => `${item.pascalName}Icon,`).join('\n\t')}
 };
 `
 
