@@ -102,7 +102,6 @@ const readAndWriteFiles = (item) => new Promise((resolve, reject) => {
     const svg = fs.readFileSync(`./svgs/${item.fileName}`, { encoding: 'utf-8' });
     const result = regex.exec(svg);
     if (result === null) {
-        console.log('##### filtered', item);
         reject(item.fileName);
     }
     if (result) {
@@ -120,6 +119,7 @@ export {
 `
 
     fs.writeFile('./build/components/index.tsx', indexFile, () => {});
+    resolve();
 })
 
 
