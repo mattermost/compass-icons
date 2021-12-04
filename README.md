@@ -63,7 +63,7 @@ Simple steps to adding new icons to the Compass Icons font
 
 -   Append the identified hexadecimal character code to the filename after a pipe character e.g. "account-outline|F0013.svg".
 
-## Import into Github Repository 
+## Import into Github Repository
 
 #### Upload your font file to the SVG folder
 
@@ -75,12 +75,14 @@ Simple steps to adding new icons to the Compass Icons font
 -   When everything looks accurate, click on the green "Commit changes" button
 -   Add any of designers the UX Team at Mattermost as a reviewer (e.g. @andrewbrown00, @mathewbirtch, @abhijit-singh, @anneliseklein, @michaelgamble)
 -   When all the information looks accurate, click the green "Create pull request" button.
-  
+
 #### Font icon package creation
+
 -   At this point you are waiting for the approval of the pull request
 -   When the commit is approved by a member of the design team the font package will automatically be created and is ready to download for use (you will get a github notificaiton when approved)
-  
+
 #### Download font package
+
 -   Navigate to the root of the compass-icon repository
 -   https://github.com/mattermost/compass-icons/
 -   Click on the "Actions" tab

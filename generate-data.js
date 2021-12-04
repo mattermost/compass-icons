@@ -17,6 +17,8 @@ const glyphs = generateGlyphs(files);
 
 const packagePath = process.cwd();
 const buildPath = path.join(packagePath, './build');
+const svgPath = path.join(packagePath, './svgs');
+const componentPath = path.join(packagePath, './components');
 
 const configData = {
     name: 'compass-icons',
@@ -46,6 +48,8 @@ export type IconGlyphTypes = ${iconGlyphs.map((glyph) => glyph.trim().slice(0, -
 export default IconGlyphs;
 `;
 
+writeToDisk('./IconGlyphs.ts', iconGlyphsData);
+
 const componentTemplate = ({ name, content }) => `import React from 'react';
 
 export type P${name} = {
@@ -69,10 +73,7 @@ const ${name}Icon = (props: P${name}): JSX.Element => (
 export default ${name}Icon;
 `;
 
-writeToDisk('./IconGlyphs.ts', iconGlyphsData);
-
 const generateComponents = async () => {
-    const regex = /(?<group>(?<starttag><(?<tagname>svg)[^>]*>)(?<data>.*|\n*)(?<endtag><\/\3>))/gmsu;
     const svgFileNames = fs.readdirSync('./svgs');
     const filtered = svgFileNames
         .filter((name) => !name.startsWith('BRKN-'))
@@ -85,7 +86,7 @@ const generateComponents = async () => {
             };
         });
 
-    fs.mkdir('./build/components', () => {});
+    fs.mkdir(componentPath, () => console.log('##### created components folder'));
 
     const promises = [];
     for (let i = 0; i < filtered.length; i++) {
@@ -94,34 +95,41 @@ const generateComponents = async () => {
 
     promises.push(createComponentIndex(filtered));
 
-    return Promise.all(promises)
+    return Promise.all(promises);
 };
 
-const readAndWriteFiles = (item) => new Promise((resolve, reject) => {
-    const regex = /(?<group>(?<starttag><(?<tagname>svg)[^>]*>)(?<data>.*|\n*)(?<endtag><\/\3>))/gmsu;
-    const svg = fs.readFileSync(`./svgs/${item.fileName}`, { encoding: 'utf-8' });
-    const result = regex.exec(svg);
-    if (result === null) {
-        reject(item.fileName);
-    }
-    if (result) {
-        fs.writeFile(`./build/components/${item.original}.tsx`, componentTemplate({ name: item.pascalName, content: result.groups.data }), () => {});
-        resolve(item.fileName);
-    }
-})
+const readAndWriteFiles = (item) =>
+    new Promise((resolve, reject) => {
+        const regex = /(?<group>(?<starttag><(?<tagname>svg)[^>]*>)(?<data>.*|\n*)(?<endtag><\/\3>))/gmsu;
 
-const createComponentIndex = (files) => new Promise((resolve, reject) => {
-    const indexFile = `${files.map((item) => `import ${item.pascalName}Icon from './${item.original}';`).join('\n')}
-    
-export {
-    ${files.map((item) => `${item.pascalName}Icon,`).join('\n\t')}
-};
-`
+        const fileData = fs.readFileSync(path.join(svgPath, item.fileName), { encoding: 'utf-8' });
+        const result = regex.exec(fileData);
 
-    fs.writeFile('./build/components/index.tsx', indexFile, () => {});
-    resolve();
-})
+        if (result === null) {
+            reject(item.fileName);
+        }
 
+        if (result) {
+            const classRegex = /class=".*?"/gmu;
+            const sanitizedResult = result.groups.data.replace(classRegex, '').replace('\n', '').replace('\t', '');
+            fs.writeFile(
+                path.join(componentPath, `${item.original}.tsx`),
+                componentTemplate({ name: item.pascalName, content: sanitizedResult }),
+                () => {}
+            );
+            resolve(item.fileName);
+        }
+    });
+
+const createComponentIndex = (files) =>
+    new Promise((resolve, reject) => {
+        const indexFileData = `${files
+            .map((item) => `import ${item.pascalName}Icon from './${item.original}';`)
+            .join('\n')}\n\nexport {\n${files.map((item) => `${item.pascalName}Icon,`).join('\n\t')}\n};`;
+
+        fs.writeFile(path.join(componentPath, 'index.tsx'), indexFileData, () => {});
+        resolve();
+    });
 
 async function createPackageFile() {
     const packageData = await fse.readFile(path.resolve(packagePath, './package.json'), 'utf8');
