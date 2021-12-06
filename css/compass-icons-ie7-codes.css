@@ -212,6 +212,7 @@
 .icon-close-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf015a;&nbsp;'); }
 .icon-code-brackets { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf016a;&nbsp;'); }
 .icon-code-tags { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0174;&nbsp;'); }
+.icon-cog-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf017d;&nbsp;'); }
 .icon-console { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf018d;&nbsp;'); }
 .icon-content-copy { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf018f;&nbsp;'); }
 .icon-BRKN-send-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0190;&nbsp;'); }

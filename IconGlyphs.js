@@ -195,6 +195,7 @@ const IconGlyphs = [
     'close',
     'code-brackets',
     'code-tags',
+    'cog-outline',
     'console',
     'content-copy',
     'credit-card-outline',
