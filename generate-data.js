@@ -52,20 +52,17 @@ export default IconGlyphs;
 writeToDisk('./IconGlyphs.ts', iconGlyphsData);
 
 const componentTemplate = ({ name, content }) => `import React from 'react';
+import IconProps from './props';
 
-export type P${name} = {
-    size: number;
-    color: string;
-};
-
-const ${name}Icon = (props: P${name}): JSX.Element => (
+const ${name}Icon: React.FC<IconProps> = ({ size, color, ...rest}: IconProps): JSX.Element => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        width={props.size || 24}
-        height={props.size || 24}
-        fill={props.color || '#000000'}
+        width={size || 24}
+        height={size || 24}
+        fill={color || '#000000'}
         viewBox="0 0 24 24"
+        {...rest}
     >
         ${content}
     </svg>
@@ -93,6 +90,8 @@ const generateComponents = async () => {
     for (let i = 0; i < filtered.length; i++) {
         promises.push(readAndWriteFiles(filtered[i]));
     }
+
+    promises.push(createComponentProps());
 
     promises.push(createComponentIndex(filtered));
 
@@ -125,10 +124,25 @@ const readAndWriteFiles = (item) =>
 const createComponentIndex = (files) =>
     new Promise((resolve, reject) => {
         const indexFileData = `${files
-            .map((item) => `import ${item.pascalName}Icon from './${item.original}';`)
-            .join('\n')}\n\nexport {\n${files.map((item) => `${item.pascalName}Icon,`).join('\n\t')}\n};\n\nconst glyphMap = {${files.map((item) => `"${item.original}": ${item.pascalName}Icon,`).join('\n\t')}};\n\nexport default glyphMap`;
+            .map(
+                (item) =>
+                    `import { IconGlyphTypes } from '../IconGlyphs';\n\nimport IconProps from './props';\nimport ${item.pascalName}Icon from './${item.original}';`
+            )
+            .join('\n')}\n\nexport {\n${files
+            .map((item) => `${item.pascalName}Icon,`)
+            .join('\n\t')}\n};\n\nconst glyphMap: { [key in IconGlyphTypes]: React.FC<IconProps> } = {${files
+            .map((item) => `"${item.original}": ${item.pascalName}Icon,`)
+            .join('\n\t')}};\n\nexport default glyphMap`;
 
         fs.writeFile(path.join(componentPath, 'index.tsx'), indexFileData, () => {});
+        resolve();
+    });
+
+const createComponentProps = () =>
+    new Promise((resolve) => {
+        const indexFileData = `type IconProps = {\n\tsize?:number;\n\tcolor?:string;\n};\n\nexport default IconProps;`;
+
+        fs.writeFile(path.join(componentPath, 'props.ts'), indexFileData, () => {});
         resolve();
     });
 
