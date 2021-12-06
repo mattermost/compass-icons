@@ -40,7 +40,7 @@
 
 <glyph glyph-name="mark-as-unread" unicode="&#xe810;" d="M125 642v-84h750v84h-750z m750-209v-166h-83l-84 83 84 83h83z m-750-41v-84h500v84h-500m0-250v-84h750v84h-750z" horiz-adv-x="1000" />
 
-<glyph glyph-name="arrow-back-ios" unicode="&#xe811;" d="M771 688l-75 75-413-413 413-413 75 76-338 337 338 338z m-21 4l-75 75-425-417 425-417 75 75-350 342 350 342z" horiz-adv-x="1000" />
+<glyph glyph-name="arrow-back-ios" unicode="&#xe811;" d="M750 692l-75 75-425-417 425-417 75 75-350 342 350 342z" horiz-adv-x="1000" />
 
 <glyph glyph-name="arrow-forward-ios" unicode="&#xe812;" d="M245 678l328-328-328-328 88-89 417 417-417 417z" horiz-adv-x="1000" />
 
