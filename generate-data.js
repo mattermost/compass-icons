@@ -30,6 +30,8 @@ const configData = {
     glyphs,
 };
 
+const formatToPascalCase = (str) => _.camelCase(str).replace(/^(.)/, _.toUpper);
+
 // write to root for fontelle-cli to retrieve
 writeJSONToDisk('config.json', configData);
 
@@ -41,7 +43,7 @@ writeJSONToDisk('./build/config.json', configData);
 const iconGlyphs = configData.glyphs.map(({ css }) => `\t'${css}',`);
 
 const iconGlyphsData = `const IconGlyphs: IconGlyphTypes[] = [
-${iconGlyphs.join('\n')}
+    ${iconGlyphs.join('\n\t')}
 ];
 export type IconGlyphTypes = ${iconGlyphs.map((glyph) => glyph.trim().slice(0, -1)).join(' | ')};
 
@@ -82,7 +84,7 @@ const generateComponents = async () => {
             return {
                 fileName: nonBroken,
                 original: sanitized,
-                pascalName: _.camelCase(sanitized).replace(/^(.)/, _.toUpper),
+                pascalName: formatToPascalCase(sanitized),
             };
         });
 
@@ -92,6 +94,8 @@ const generateComponents = async () => {
     for (let i = 0; i < filtered.length; i++) {
         promises.push(readAndWriteFiles(filtered[i]));
     }
+
+    promises.push(createComponentConstant(filtered));
 
     promises.push(createComponentIndex(filtered));
 
@@ -128,6 +132,16 @@ const createComponentIndex = (files) =>
             .join('\n')}\n\nexport {\n${files.map((item) => `${item.pascalName}Icon,`).join('\n\t')}\n};`;
 
         fs.writeFile(path.join(componentPath, 'index.tsx'), indexFileData, () => {});
+        resolve();
+    });
+
+const createComponentConstant = (files) =>
+    new Promise((resolve, reject) => {
+        const indexFileData = `export const ICON_GLYPH_MAP = {\n${files
+            .map((item) => `${`"${item.original}": "${item.pascalName}Icon",`}`)
+            .join('\n\t')}\n};`;
+
+        fs.writeFile(path.join(componentPath, 'constants.tsx'), indexFileData, () => {});
         resolve();
     });
 
