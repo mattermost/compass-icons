@@ -46,6 +46,11 @@ const iconGlyphsData = `const IconGlyphs: IconGlyphTypes[] = [\n${iconGlyphs.joi
 
 export type IconGlyphTypes = ${iconGlyphs.map((glyph) => glyph.trim().slice(0, -1)).join(' | ')};
 
+export type NonBrokenIconGlyphTypes = ${iconGlyphs
+    .filter((glyph) => !glyph.includes('BRKN'))
+    .map((glyph) => glyph.trim().slice(0, -1))
+    .join(' | ')};
+
 export default IconGlyphs;
 `;
 
@@ -76,7 +81,7 @@ const generateComponents = async () => {
     const filtered = svgFileNames
         .filter((name) => !name.startsWith('BRKN-'))
         .map((nonBroken) => {
-            const sanitized = nonBroken.split('_')[0];
+            const sanitized = nonBroken.slice(0, -4).split('_')[0];
             return {
                 fileName: nonBroken,
                 original: sanitized,
@@ -123,14 +128,11 @@ const readAndWriteFiles = (item) =>
 
 const createComponentIndex = (files) =>
     new Promise((resolve, reject) => {
-        const indexFileData = `${files
-            .map(
-                (item) =>
-                    `import { IconGlyphTypes } from '../IconGlyphs';\n\nimport IconProps from './props';\nimport ${item.pascalName}Icon from './${item.original}';`
-            )
+        const indexFileData = `import { NonBrokenIconGlyphTypes } from '../IconGlyphs';\n\nimport IconProps from './props';\n${files
+            .map((item) => `import ${item.pascalName}Icon from './${item.original}';`)
             .join('\n')}\n\nexport {\n${files
             .map((item) => `${item.pascalName}Icon,`)
-            .join('\n\t')}\n};\n\nconst glyphMap: { [key in IconGlyphTypes]: React.FC<IconProps> } = {${files
+            .join('\n\t')}\n};\n\nconst glyphMap: { [key in NonBrokenIconGlyphTypes]: React.FC<IconProps> } = {${files
             .map((item) => `"${item.original}": ${item.pascalName}Icon,`)
             .join('\n\t')}};\n\nexport default glyphMap`;
 
