@@ -42,9 +42,8 @@ writeJSONToDisk('./build/config.json', configData);
 
 const iconGlyphs = configData.glyphs.map(({ css }) => `\t'${css}',`);
 
-const iconGlyphsData = `const IconGlyphs: IconGlyphTypes[] = [
-    ${iconGlyphs.join('\n\t')}
-];
+const iconGlyphsData = `const IconGlyphs: IconGlyphTypes[] = [\n${iconGlyphs.join('\n\t')}\n];
+
 export type IconGlyphTypes = ${iconGlyphs.map((glyph) => glyph.trim().slice(0, -1)).join(' | ')};
 
 export default IconGlyphs;
@@ -95,8 +94,6 @@ const generateComponents = async () => {
         promises.push(readAndWriteFiles(filtered[i]));
     }
 
-    promises.push(createComponentConstant(filtered));
-
     promises.push(createComponentIndex(filtered));
 
     return Promise.all(promises);
@@ -129,19 +126,9 @@ const createComponentIndex = (files) =>
     new Promise((resolve, reject) => {
         const indexFileData = `${files
             .map((item) => `import ${item.pascalName}Icon from './${item.original}';`)
-            .join('\n')}\n\nexport {\n${files.map((item) => `${item.pascalName}Icon,`).join('\n\t')}\n};`;
+            .join('\n')}\n\nexport {\n${files.map((item) => `${item.pascalName}Icon,`).join('\n\t')}\n};\n\nconst glyphMap = {${files.map((item) => `"${item.original}": ${item.pascalName}Icon,`).join('\n\t')}};\n\nexport default glyphMap`;
 
         fs.writeFile(path.join(componentPath, 'index.tsx'), indexFileData, () => {});
-        resolve();
-    });
-
-const createComponentConstant = (files) =>
-    new Promise((resolve, reject) => {
-        const indexFileData = `export const ICON_GLYPH_MAP = {\n${files
-            .map((item) => `${`"${item.original}": "${item.pascalName}Icon",`}`)
-            .join('\n\t')}\n};`;
-
-        fs.writeFile(path.join(componentPath, 'constants.tsx'), indexFileData, () => {});
         resolve();
     });
 
