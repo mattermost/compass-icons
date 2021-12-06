@@ -2,9 +2,9 @@ name: build and publish
 
 # This action will trigger on every published release
 on:
-  release:
-    types:
-      - published
+    release:
+        types:
+            - published
 
 # Job will run on a ubuntu instance
 jobs:
