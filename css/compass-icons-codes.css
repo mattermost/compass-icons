@@ -91,6 +91,7 @@
 .icon-console:before { content: '󰆍'; } /* '\f018d' */
 .icon-content-copy:before { content: '󰆏'; } /* '\f018f' */
 .icon-credit-card-outline:before { content: '󰆛'; } /* '\f019b' */
+.icon-currency-usd:before { content: '󰇁'; } /* '\f01c1' */
 .icon-dots-horizontal:before { content: '󰇘'; } /* '\f01d8' */
 .icon-dots-vertical:before { content: '󰇙'; } /* '\f01d9' */
 .icon-drag-vertical:before { content: '󰇝'; } /* '\f01dd' */
@@ -156,6 +157,7 @@
 .icon-play:before { content: '󰐊'; } /* '\f040a' */
 .icon-plus:before { content: '󰐕'; } /* '\f0415' */
 .icon-plus-box:before { content: '󰐖'; } /* '\f0416' */
+.icon-pound:before { content: '󰐣'; } /* '\f0423' */
 .icon-radiobox-blank:before { content: '󰐽'; } /* '\f043d' */
 .icon-radiobox-marked:before { content: '󰐾'; } /* '\f043e' */
 .icon-refresh:before { content: '󰑐'; } /* '\f0450' */
