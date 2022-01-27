@@ -60,6 +60,7 @@
 .icon-alert-outline:before { content: '󰀪'; } /* '\f002a' */
 .icon-apps:before { content: '󰀻'; } /* '\f003b' */
 .icon-arrow-down:before { content: '󰁅'; } /* '\f0045' */
+.icon-arrow-down-bold-circle-outline:before { content: '󰁈'; } /* '\f0048' */
 .icon-arrow-expand-all:before { content: '󰁌'; } /* '\f004c' */
 .icon-arrow-left:before { content: '󰁍'; } /* '\f004d' */
 .icon-arrow-right:before { content: '󰁔'; } /* '\f0054' */

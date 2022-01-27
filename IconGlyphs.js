@@ -16,6 +16,7 @@ const IconGlyphs = [
     'archive-outline',
     'arrow-back-ios',
     'arrow-collapse',
+    'arrow-down-bold-circle-outline',
     'arrow-down',
     'arrow-expand-all',
     'arrow-expand',

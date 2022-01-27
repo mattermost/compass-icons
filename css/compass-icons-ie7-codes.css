@@ -59,6 +59,7 @@
 .icon-alert-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf002a;&nbsp;'); }
 .icon-apps { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf003b;&nbsp;'); }
 .icon-arrow-down { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0045;&nbsp;'); }
+.icon-arrow-down-bold-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0048;&nbsp;'); }
 .icon-arrow-expand-all { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf004c;&nbsp;'); }
 .icon-arrow-left { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf004d;&nbsp;'); }
 .icon-arrow-right { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0054;&nbsp;'); }
