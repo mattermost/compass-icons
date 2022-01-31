@@ -180,6 +180,7 @@
 .icon-check-circle-outline:before { content: '󰗡'; } /* '\f05e1' */
 .icon-email-variant:before { content: '󰗰'; } /* '\f05f0' */
 .icon-food-fork-drink:before { content: '󰗲'; } /* '\f05f2' */
+.icon-logout-variant:before { content: '󰗽'; } /* '\f05fd' */
 .icon-arrow-collapse:before { content: '󰘕'; } /* '\f0615' */
 .icon-arrow-expand:before { content: '󰘖'; } /* '\f0616' */
 .icon-help-circle-outline:before { content: '󰘥'; } /* '\f0625' */

@@ -173,6 +173,7 @@ const IconGlyphs = [
     'link-variant',
     'lock-outline',
     'lock',
+    'logout-variant',
     'magnify-minus',
     'magnify-plus',
     'magnify',
