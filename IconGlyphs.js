@@ -100,6 +100,7 @@ const IconGlyphs = [
     'file-excel-outline',
     'file-generic-outline-large',
     'file-generic-outline',
+    'file-gif',
     'file-image-broken-outline-large',
     'file-image-broken-outline',
     'file-image-outline-large',
