@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'compass-icons';
-  src: url('../font/compass-icons.eot?23701167');
-  src: url('../font/compass-icons.eot?23701167#iefix') format('embedded-opentype'),
-       url('../font/compass-icons.woff2?23701167') format('woff2'),
-       url('../font/compass-icons.woff?23701167') format('woff'),
-       url('../font/compass-icons.ttf?23701167') format('truetype'),
-       url('../font/compass-icons.svg?23701167#compass-icons') format('svg');
+  src: url('../font/compass-icons.eot?54594570');
+  src: url('../font/compass-icons.eot?54594570#iefix') format('embedded-opentype'),
+       url('../font/compass-icons.woff2?54594570') format('woff2'),
+       url('../font/compass-icons.woff?54594570') format('woff'),
+       url('../font/compass-icons.ttf?54594570') format('truetype'),
+       url('../font/compass-icons.svg?54594570#compass-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'compass-icons';
-    src: url('../font/compass-icons.svg?23701167#compass-icons') format('svg');
+    src: url('../font/compass-icons.svg?54594570#compass-icons') format('svg');
   }
 }
 */
@@ -96,6 +96,7 @@
 .icon-file-pdf-outline:before { content: '\e831'; } /* '' */
 .icon-account-multiple-plus-outline:before { content: '\e832'; } /* '' */
 .icon-file-gif:before { content: '\e833'; } /* '' */
+.icon-kanban:before { content: '\e834'; } /* '' */
 .icon-file-text-outline-large:before { content: '\e900'; } /* '' */
 .icon-file-word-outline-large:before { content: '\e901'; } /* '' */
 .icon-file-excel-outline-large:before { content: '\e902'; } /* '' */
@@ -226,6 +227,7 @@
 .icon-star:before { content: '󰓎'; } /* '\f04ce' */
 .icon-star-outline:before { content: '󰓒'; } /* '\f04d2' */
 .icon-sync:before { content: '󰓦'; } /* '\f04e6' */
+.icon-table-large:before { content: '󰓱'; } /* '\f04f1' */
 .icon-thumbs-up-down:before { content: '󰔕'; } /* '\f0515' */
 .icon-beach-umbrella-outline:before { content: '󰕋'; } /* '\f054b' */
 .icon-volume-high:before { content: '󰕾'; } /* '\f057e' */
@@ -282,6 +284,7 @@
 .icon-camera-outline:before { content: '󰵝'; } /* '\f0d5d' */
 .icon-phone-outline:before { content: '󰷰'; } /* '\f0df0' */
 .icon-palette-outline:before { content: '󰸌'; } /* '\f0e0c' */
+.icon-calendar-month-outline:before { content: '󰸘'; } /* '\f0e18' */
 .icon-file-video-outline:before { content: '󰸬'; } /* '\f0e2c' */
 .icon-hand-right:before { content: '󰹇'; } /* '\f0e47' */
 .icon-file-image-outline:before { content: '󰺰'; } /* '\f0eb0' */
