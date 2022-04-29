@@ -254,6 +254,7 @@
 .icon-exclamation-thick:before { content: '󱈸'; } /* '\f1238' */
 .icon-folder-move-outline:before { content: '󱉆'; } /* '\f1246' */
 .icon-archive-arrow-up-outline:before { content: '󱉜'; } /* '\f125c' */
+.icon-lightning-bolt-outline:before { content: '󱐌'; } /* '\f140c' */
 .icon-power-plug-outline:before { content: '󱐥'; } /* '\f1425' */
 .icon-car-outline:before { content: '󱓭'; } /* '\f14ed' */
 .icon-share-variant-outline:before { content: '󱔔'; } /* '\f1514' */

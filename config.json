@@ -2401,6 +2401,20 @@
       ]
     },
     {
+      "uid": "070389cf83156bb29ecb07d1a22a9c59",
+      "css": "lightning-bolt-outline",
+      "code": 988172,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M458.3 394.6V458.3H615L541.7 605.4V541.7H385L458.3 394.6M541.7 41.7L250 625H458.3V958.3L750 375H541.7V41.7Z",
+        "width": 1000
+      },
+      "search": [
+        "lightning-bolt-outline"
+      ]
+    },
+    {
       "uid": "51d06dd1e6bac9d478389b5090a44119",
       "css": "link-variant-off",
       "code": 983866,

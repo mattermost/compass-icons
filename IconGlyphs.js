@@ -172,6 +172,7 @@ const IconGlyphs = [
     'leaf-outline',
     'leaf',
     'lightbulb-outline',
+    'lightning-bolt-outline',
     'link-variant-off',
     'link-variant',
     'lock-outline',
