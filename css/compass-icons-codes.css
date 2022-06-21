@@ -106,6 +106,7 @@
 .icon-filter-variant:before { content: '󰈶'; } /* '\f0236' */
 .icon-fire:before { content: '󰈸'; } /* '\f0238' */
 .icon-flag:before { content: '󰈻'; } /* '\f023b' */
+.icon-flag-checkered:before { content: '󰈼'; } /* '\f023c' */
 .icon-flag-outline:before { content: '󰈽'; } /* '\f023d' */
 .icon-folder-outline:before { content: '󰉖'; } /* '\f0256' */
 .icon-format-bold:before { content: '󰉤'; } /* '\f0264' */
@@ -214,14 +215,17 @@
 .icon-trash-can-outline:before { content: '󰩺'; } /* '\f0a7a' */
 .icon-bell-off-outline:before { content: '󰪑'; } /* '\f0a91' */
 .icon-account-minus-outline:before { content: '󰫬'; } /* '\f0aec' */
+.icon-bullhorn-outline:before { content: '󰬣'; } /* '\f0b23' */
 .icon-chevron-down-circle-outline:before { content: '󰬧'; } /* '\f0b27' */
 .icon-format-letter-case:before { content: '󰬴'; } /* '\f0b34' */
+.icon-book-outline:before { content: '󰭤'; } /* '\f0b64' */
 .icon-calendar-outline:before { content: '󰭧'; } /* '\f0b67' */
 .icon-download-outline:before { content: '󰮏'; } /* '\f0b8f' */
 .icon-export-variant:before { content: '󰮓'; } /* '\f0b93' */
 .icon-folder-plus-outline:before { content: '󰮝'; } /* '\f0b9d' */
 .icon-brand-gitlab:before { content: '󰮠'; } /* '\f0ba0' */
 .icon-home-variant-outline:before { content: '󰮧'; } /* '\f0ba7' */
+.icon-timeline-text-outline:before { content: '󰯔'; } /* '\f0bd4' */
 .icon-video-outline:before { content: '󰯜'; } /* '\f0bdc' */
 .icon-calendar-check-outline:before { content: '󰱄'; } /* '\f0c44' */
 .icon-food-apple:before { content: '󰲄'; } /* '\f0c84' */
@@ -235,6 +239,7 @@
 .icon-file-image-outline:before { content: '󰺰'; } /* '\f0eb0' */
 .icon-notebook-outline:before { content: '󰺿'; } /* '\f0ebf' */
 .icon-shield-alert-outline:before { content: '󰻍'; } /* '\f0ecd' */
+.icon-play-outline:before { content: '󰼛'; } /* '\f0f1b' */
 .icon-reply-outline:before { content: '󰼠'; } /* '\f0f20' */
 .icon-draw:before { content: '󰽉'; } /* '\f0f49' */
 .icon-slash-forward:before { content: '󰿟'; } /* '\f0fdf' */
@@ -259,4 +264,5 @@
 .icon-car-outline:before { content: '󱓭'; } /* '\f14ed' */
 .icon-share-variant-outline:before { content: '󱔔'; } /* '\f1514' */
 .icon-application-cog:before { content: '󱕷'; } /* '\f1577' */
+.icon-book-lock-outline:before { content: '󱚏'; } /* '\f168f' */
 .icon-robot-happy:before { content: '󱜙'; } /* '\f1719' */

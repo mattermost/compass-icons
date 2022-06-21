@@ -105,6 +105,7 @@
 .icon-filter-variant { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0236;&nbsp;'); }
 .icon-fire { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0238;&nbsp;'); }
 .icon-flag { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf023b;&nbsp;'); }
+.icon-flag-checkered { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf023c;&nbsp;'); }
 .icon-flag-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf023d;&nbsp;'); }
 .icon-folder-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0256;&nbsp;'); }
 .icon-format-bold { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0264;&nbsp;'); }
@@ -213,14 +214,17 @@
 .icon-trash-can-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a7a;&nbsp;'); }
 .icon-bell-off-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a91;&nbsp;'); }
 .icon-account-minus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0aec;&nbsp;'); }
+.icon-bullhorn-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b23;&nbsp;'); }
 .icon-chevron-down-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b27;&nbsp;'); }
 .icon-format-letter-case { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b34;&nbsp;'); }
+.icon-book-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b64;&nbsp;'); }
 .icon-calendar-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b67;&nbsp;'); }
 .icon-download-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b8f;&nbsp;'); }
 .icon-export-variant { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b93;&nbsp;'); }
 .icon-folder-plus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b9d;&nbsp;'); }
 .icon-brand-gitlab { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ba0;&nbsp;'); }
 .icon-home-variant-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ba7;&nbsp;'); }
+.icon-timeline-text-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0bd4;&nbsp;'); }
 .icon-video-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0bdc;&nbsp;'); }
 .icon-calendar-check-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c44;&nbsp;'); }
 .icon-food-apple { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c84;&nbsp;'); }
@@ -234,6 +238,7 @@
 .icon-file-image-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0eb0;&nbsp;'); }
 .icon-notebook-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ebf;&nbsp;'); }
 .icon-shield-alert-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ecd;&nbsp;'); }
+.icon-play-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f1b;&nbsp;'); }
 .icon-reply-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f20;&nbsp;'); }
 .icon-draw { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f49;&nbsp;'); }
 .icon-slash-forward { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0fdf;&nbsp;'); }
@@ -258,4 +263,5 @@
 .icon-car-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf14ed;&nbsp;'); }
 .icon-share-variant-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1514;&nbsp;'); }
 .icon-application-cog { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1577;&nbsp;'); }
+.icon-book-lock-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf168f;&nbsp;'); }
 .icon-robot-happy { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1719;&nbsp;'); }
