@@ -777,6 +777,20 @@
       ]
     },
     {
+      "uid": "a3a1a951b8738a66b0904d55dd93c88b",
+      "css": "checkbox-multiple-marked-outline",
+      "code": 983353,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M833.3 666.7V416.7H916.7V666.7A83.3 83.3 0 0 1 833.3 750H333.3C287.1 750 250 712.5 250 666.7V166.7C250 120.4 287.1 83.3 333.3 83.3H666.7V166.7H333.3V666.7H833.3M454.6 295L583.3 423.8 857.9 149.2 916.7 208.3 583.3 541.7 395.8 354.2 454.6 295M666.7 833.3V916.7H166.7A83.3 83.3 0 0 1 83.3 833.3V291.7H166.7V833.3H666.7Z",
+        "width": 1000
+      },
+      "search": [
+        "checkbox-multiple-marked-outline"
+      ]
+    },
+    {
       "uid": "608c0fa1193d9988ff418119ae290878",
       "css": "chevron-down-circle-outline",
       "code": 985895,

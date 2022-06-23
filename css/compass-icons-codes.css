@@ -80,6 +80,7 @@
 .icon-check-all:before { content: '󰄭'; } /* '\f012d' */
 .icon-checkbox-blank-outline:before { content: '󰄱'; } /* '\f0131' */
 .icon-checkbox-marked:before { content: '󰄲'; } /* '\f0132' */
+.icon-checkbox-multiple-marked-outline:before { content: '󰄹'; } /* '\f0139' */
 .icon-chevron-down:before { content: '󰅀'; } /* '\f0140' */
 .icon-chevron-left:before { content: '󰅁'; } /* '\f0141' */
 .icon-chevron-right:before { content: '󰅂'; } /* '\f0142' */
