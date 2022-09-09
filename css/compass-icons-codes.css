@@ -127,6 +127,7 @@
 .icon-brand-google:before { content: '󰊭'; } /* '\f02ad' */
 .icon-heart-outline:before { content: '󰋕'; } /* '\f02d5' */
 .icon-help:before { content: '󰋖'; } /* '\f02d6' */
+.icon-import:before { content: '󰋺'; } /* '\f02fa' */
 .icon-information-outline:before { content: '󰋽'; } /* '\f02fd' */
 .icon-key-variant:before { content: '󰌋'; } /* '\f030b' */
 .icon-laptop:before { content: '󰌢'; } /* '\f0322' */
@@ -209,8 +210,10 @@
 .icon-pin-outline:before { content: '󰤱'; } /* '\f0931' */
 .icon-clock:before { content: '󰥔'; } /* '\f0954' */
 .icon-image-outline:before { content: '󰥶'; } /* '\f0976' */
+.icon-restore:before { content: '󰦛'; } /* '\f099b' */
 .icon-arrow-right-bold-outline:before { content: '󰧂'; } /* '\f09c2' */
 .icon-email-plus-outline:before { content: '󰧬'; } /* '\f09ec' */
+.icon-text-box-outline:before { content: '󰧭'; } /* '\f09ed' */
 .icon-file-text-outline:before { content: '󰧮'; } /* '\f09ee' */
 .icon-layers-outline:before { content: '󰧾'; } /* '\f09fe' */
 .icon-trash-can-outline:before { content: '󰩺'; } /* '\f0a7a' */
@@ -260,6 +263,7 @@
 .icon-exclamation-thick:before { content: '󱈸'; } /* '\f1238' */
 .icon-folder-move-outline:before { content: '󱉆'; } /* '\f1246' */
 .icon-archive-arrow-up-outline:before { content: '󱉜'; } /* '\f125c' */
+.icon-play-box-multiple-outline:before { content: '󱏦'; } /* '\f13e6' */
 .icon-lightning-bolt-outline:before { content: '󱐌'; } /* '\f140c' */
 .icon-power-plug-outline:before { content: '󱐥'; } /* '\f1425' */
 .icon-car-outline:before { content: '󱓭'; } /* '\f14ed' */
