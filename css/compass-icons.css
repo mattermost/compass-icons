@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'compass-icons';
-  src: url('../font/compass-icons.eot?86763500');
-  src: url('../font/compass-icons.eot?86763500#iefix') format('embedded-opentype'),
-       url('../font/compass-icons.woff2?86763500') format('woff2'),
-       url('../font/compass-icons.woff?86763500') format('woff'),
-       url('../font/compass-icons.ttf?86763500') format('truetype'),
-       url('../font/compass-icons.svg?86763500#compass-icons') format('svg');
+  src: url('../font/compass-icons.eot?46276047');
+  src: url('../font/compass-icons.eot?46276047#iefix') format('embedded-opentype'),
+       url('../font/compass-icons.woff2?46276047') format('woff2'),
+       url('../font/compass-icons.woff?46276047') format('woff'),
+       url('../font/compass-icons.ttf?46276047') format('truetype'),
+       url('../font/compass-icons.svg?46276047#compass-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'compass-icons';
-    src: url('../font/compass-icons.svg?86763500#compass-icons') format('svg');
+    src: url('../font/compass-icons.svg?46276047#compass-icons') format('svg');
   }
 }
 */
@@ -203,6 +203,7 @@
 .icon-message-text-outline:before { content: '󰍪'; } /* '\f036a' */
 .icon-microphone:before { content: '󰍬'; } /* '\f036c' */
 .icon-microphone-off:before { content: '󰍭'; } /* '\f036d' */
+.icon-microphone-outline:before { content: '󰍮'; } /* '\f036e' */
 .icon-minus:before { content: '󰍴'; } /* '\f0374' */
 .icon-minus-box:before { content: '󰍵'; } /* '\f0375' */
 .icon-minus-circle:before { content: '󰍶'; } /* '\f0376' */

@@ -158,6 +158,7 @@
 .icon-message-text-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf036a;&nbsp;'); }
 .icon-microphone { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf036c;&nbsp;'); }
 .icon-microphone-off { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf036d;&nbsp;'); }
+.icon-microphone-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf036e;&nbsp;'); }
 .icon-minus { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0374;&nbsp;'); }
 .icon-minus-box { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0375;&nbsp;'); }
 .icon-minus-circle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0376;&nbsp;'); }
