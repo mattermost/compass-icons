@@ -2723,6 +2723,20 @@
       ]
     },
     {
+      "uid": "17c5688ed5026a645c26493861dfb2a6",
+      "css": "message-arrow-right-outline",
+      "code": 987893,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M833.3 83.3H166.7C120.8 83.3 83.3 120.8 83.3 166.7V916.7L250 750H833.3C879.2 750 916.7 712.5 916.7 666.7V166.7C916.7 120.8 879.2 83.3 833.3 83.3M833.3 666.7H216.7L166.7 716.7V166.7H833.3V666.7M333.3 375V458.3H520.8L445.8 533.3 500 583.3 666.7 416.7 500 250 450 300 520.8 375H333.3Z",
+        "width": 1000
+      },
+      "search": [
+        "message-arrow-right-outline"
+      ]
+    },
+    {
       "uid": "93dfe2984e99f7c055db10a80e10adcd",
       "css": "message-check-outline",
       "code": 59419,

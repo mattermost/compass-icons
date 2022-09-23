@@ -264,6 +264,7 @@
 .icon-exclamation-thick:before { content: '󱈸'; } /* '\f1238' */
 .icon-folder-move-outline:before { content: '󱉆'; } /* '\f1246' */
 .icon-archive-arrow-up-outline:before { content: '󱉜'; } /* '\f125c' */
+.icon-message-arrow-right-outline:before { content: '󱋵'; } /* '\f12f5' */
 .icon-play-box-multiple-outline:before { content: '󱏦'; } /* '\f13e6' */
 .icon-lightning-bolt-outline:before { content: '󱐌'; } /* '\f140c' */
 .icon-power-plug-outline:before { content: '󱐥'; } /* '\f1425' */

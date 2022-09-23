@@ -263,6 +263,7 @@
 .icon-exclamation-thick { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1238;&nbsp;'); }
 .icon-folder-move-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1246;&nbsp;'); }
 .icon-archive-arrow-up-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf125c;&nbsp;'); }
+.icon-message-arrow-right-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf12f5;&nbsp;'); }
 .icon-play-box-multiple-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf13e6;&nbsp;'); }
 .icon-lightning-bolt-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf140c;&nbsp;'); }
 .icon-power-plug-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1425;&nbsp;'); }

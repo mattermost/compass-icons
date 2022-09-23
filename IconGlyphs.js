@@ -195,6 +195,7 @@ const IconGlyphs = [
     'menu-up',
     'menu-variant',
     'menu',
+    'message-arrow-right-outline',
     'message-check-outline',
     'message-check',
     'message-minus-outline',

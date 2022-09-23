@@ -534,6 +534,8 @@
 
 <glyph glyph-name="archive-arrow-up-outline" unicode="&#xf125c;" d="M833-25h-666v458h83v-375h500v375h83v-458m-708 750h750v-250h-750v250m83-83v-84h584v84m-354-500v125h-105l167 166 167-166h-104v-125" horiz-adv-x="1000" />
 
+<glyph glyph-name="message-arrow-right-outline" unicode="&#xf12f5;" d="M833 767h-666c-46 0-84-38-84-84v-750l167 167h583c46 0 84 38 84 83v500c0 46-38 84-84 84m0-584h-616l-50-50v550h666v-500m-500 292v-83h188l-75-75 54-50 167 166-167 167-50-50 71-75h-188z" horiz-adv-x="1000" />
+
 <glyph glyph-name="play-box-multiple-outline" unicode="&#xf13e6;" d="M167 600h-84v-583c0-46 38-84 84-84h583v84h-583v583m666 83v-500h-500v500h500m0 84h-500c-45 0-83-38-83-84v-500c0-45 38-83 83-83h500c46 0 84 38 84 83v500c0 46-38 84-84 84m-333-521v375l250-188-250-187z" horiz-adv-x="1000" />
 
 <glyph glyph-name="lightning-bolt-outline" unicode="&#xf140c;" d="M458 455v-63h157l-73-147v63h-157l73 147m84 353l-292-583h208v-333l292 583h-208v333z" horiz-adv-x="1000" />
