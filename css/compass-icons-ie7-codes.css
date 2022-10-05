@@ -170,6 +170,7 @@
 .icon-refresh { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0450;&nbsp;'); }
 .icon-send { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf048a;&nbsp;'); }
 .icon-shield-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0499;&nbsp;'); }
+.icon-shuffle-variant { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf049f;&nbsp;'); }
 .icon-sitemap { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04aa;&nbsp;'); }
 .icon-soccer { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04b8;&nbsp;'); }
 .icon-source-pull { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04c2;&nbsp;'); }

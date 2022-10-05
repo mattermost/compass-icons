@@ -251,6 +251,7 @@ const IconGlyphs = [
     'share-variant-outline',
     'shield-alert-outline',
     'shield-outline',
+    'shuffle-variant',
     'sitemap',
     'slash-forward-box-outline',
     'slash-forward',
