@@ -42,6 +42,7 @@
 .icon-file-gif { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe833;&nbsp;'); }
 .icon-kanban { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe834;&nbsp;'); }
 .icon-code-block { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe835;&nbsp;'); }
+.icon-clock-send-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe836;&nbsp;'); }
 .icon-file-text-outline-large { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;&nbsp;'); }
 .icon-file-word-outline-large { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe901;&nbsp;'); }
 .icon-file-excel-outline-large { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe902;&nbsp;'); }

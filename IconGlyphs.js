@@ -66,6 +66,7 @@ const IconGlyphs = [
     'circle-multiple-outline',
     'circle-outline',
     'clock-outline',
+    'clock-send-outline',
     'clock',
     'close-circle-outline',
     'close-circle',
