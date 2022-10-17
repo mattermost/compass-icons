@@ -179,7 +179,13 @@
 .icon-star:before { content: '󰓎'; } /* '\f04ce' */
 .icon-star-outline:before { content: '󰓒'; } /* '\f04d2' */
 .icon-sync:before { content: '󰓦'; } /* '\f04e6' */
+.icon-table-column-plus-after:before { content: '󰓬'; } /* '\f04ec' */
+.icon-table-column-plus-before:before { content: '󰓭'; } /* '\f04ed' */
+.icon-table-column-remove:before { content: '󰓮'; } /* '\f04ee' */
 .icon-table-large:before { content: '󰓱'; } /* '\f04f1' */
+.icon-table-row-plus-after:before { content: '󰓳'; } /* '\f04f3' */
+.icon-table-row-plus-before:before { content: '󰓴'; } /* '\f04f4' */
+.icon-table-row-remove:before { content: '󰓵'; } /* '\f04f5' */
 .icon-thumbs-up-down:before { content: '󰔕'; } /* '\f0515' */
 .icon-beach-umbrella-outline:before { content: '󰕋'; } /* '\f054b' */
 .icon-volume-high:before { content: '󰕾'; } /* '\f057e' */
@@ -209,6 +215,7 @@
 .icon-circle-outline:before { content: '󰝦'; } /* '\f0766' */
 .icon-account-plus-outline:before { content: '󰠁'; } /* '\f0801' */
 .icon-forum-outline:before { content: '󰠢'; } /* '\f0822' */
+.icon-table-settings:before { content: '󰠸'; } /* '\f0838' */
 .icon-settings-outline:before { content: '󰢻'; } /* '\f08bb' */
 .icon-hammer:before { content: '󰣪'; } /* '\f08ea' */
 .icon-pin-outline:before { content: '󰤱'; } /* '\f0931' */
@@ -220,6 +227,8 @@
 .icon-text-box-outline:before { content: '󰧭'; } /* '\f09ed' */
 .icon-file-text-outline:before { content: '󰧮'; } /* '\f09ee' */
 .icon-layers-outline:before { content: '󰧾'; } /* '\f09fe' */
+.icon-table-plus:before { content: '󰩵'; } /* '\f0a75' */
+.icon-table-remove:before { content: '󰩶'; } /* '\f0a76' */
 .icon-trash-can-outline:before { content: '󰩺'; } /* '\f0a7a' */
 .icon-bell-off-outline:before { content: '󰪑'; } /* '\f0a91' */
 .icon-account-minus-outline:before { content: '󰫬'; } /* '\f0aec' */
