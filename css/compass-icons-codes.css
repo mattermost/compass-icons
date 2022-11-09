@@ -44,6 +44,7 @@
 .icon-kanban:before { content: '\e834'; } /* '' */
 .icon-code-block:before { content: '\e835'; } /* '' */
 .icon-clock-send-outline:before { content: '\e836'; } /* '' */
+.icon-record-square-outline:before { content: '\e837'; } /* '' */
 .icon-file-text-outline-large:before { content: '\e900'; } /* '' */
 .icon-file-word-outline-large:before { content: '\e901'; } /* '' */
 .icon-file-excel-outline-large:before { content: '\e902'; } /* '' */
@@ -248,6 +249,7 @@
 .icon-food-apple:before { content: '󰲄'; } /* '\f0c84' */
 .icon-pencil-outline:before { content: '󰲶'; } /* '\f0cb6' */
 .icon-camera-outline:before { content: '󰵝'; } /* '\f0d5d' */
+.icon-monitor-off:before { content: '󰶐'; } /* '\f0d90' */
 .icon-phone-outline:before { content: '󰷰'; } /* '\f0df0' */
 .icon-palette-outline:before { content: '󰸌'; } /* '\f0e0c' */
 .icon-calendar-month-outline:before { content: '󰸘'; } /* '\f0e18' */
@@ -255,6 +257,7 @@
 .icon-hand-right:before { content: '󰹇'; } /* '\f0e47' */
 .icon-file-image-outline:before { content: '󰺰'; } /* '\f0eb0' */
 .icon-notebook-outline:before { content: '󰺿'; } /* '\f0ebf' */
+.icon-record-circle-outline:before { content: '󰻃'; } /* '\f0ec3' */
 .icon-shield-alert-outline:before { content: '󰻍'; } /* '\f0ecd' */
 .icon-play-outline:before { content: '󰼛'; } /* '\f0f1b' */
 .icon-reply-outline:before { content: '󰼠'; } /* '\f0f20' */
@@ -285,3 +288,5 @@
 .icon-application-cog:before { content: '󱕷'; } /* '\f1577' */
 .icon-book-lock-outline:before { content: '󱚏'; } /* '\f168f' */
 .icon-robot-happy:before { content: '󱜙'; } /* '\f1719' */
+.icon-hand-right-outline:before { content: '󱠭'; } /* '\f182d' */
+.icon-hand-right-outline-off:before { content: '󱠳'; } /* '\f1833' */
