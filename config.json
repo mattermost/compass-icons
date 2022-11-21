@@ -3675,6 +3675,20 @@
       ]
     },
     {
+      "uid": "d538afd2a3dfe9424fa4558099e0c80e",
+      "css": "sort-ascending",
+      "code": 984252,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M791.7 708.3H916.7L750 875 583.3 708.3H708.3V125H791.7M83.3 708.3H500V791.7H83.3M250 208.3V291.7H83.3V208.3M83.3 458.3H375V541.7H83.3V458.3Z",
+        "width": 1000
+      },
+      "search": [
+        "sort-ascending"
+      ]
+    },
+    {
       "uid": "134e5927eb83513bbf71c4ec7fc7a481",
       "css": "source-branch",
       "code": 984620,

@@ -263,6 +263,7 @@ const IconGlyphs = [
     'slash-forward',
     'soccer',
     'sort-alphabetical-ascending',
+    'sort-ascending',
     'source-branch',
     'source-pull',
     'square',
