@@ -181,6 +181,7 @@
 .icon-radiobox-blank { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf043d;&nbsp;'); }
 .icon-radiobox-marked { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf043e;&nbsp;'); }
 .icon-refresh { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0450;&nbsp;'); }
+.icon-resize-bottom-right { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf045d;&nbsp;'); }
 .icon-send { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf048a;&nbsp;'); }
 .icon-shield-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0499;&nbsp;'); }
 .icon-shuffle-variant { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf049f;&nbsp;'); }

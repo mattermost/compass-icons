@@ -3423,6 +3423,20 @@
       ]
     },
     {
+      "uid": "eaa9d59a75efb108f9c726a7871f42f9",
+      "css": "resize-bottom-right",
+      "code": 984157,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M537 787L478.1 728.1 728.1 478.1 787 537 537 787ZM279.5 779.5L220.5 720.5 720.5 220.5 779.5 279.5 279.5 779.5Z",
+        "width": 1000
+      },
+      "search": [
+        "resize-bottom-right"
+      ]
+    },
+    {
       "uid": "d26c8f5d0e17254fca5962309dd67155",
       "css": "restore",
       "code": 985499,

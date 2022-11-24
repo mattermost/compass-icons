@@ -245,6 +245,7 @@ const IconGlyphs = [
     'record-square-outline',
     'refresh',
     'reply-outline',
+    'resize-bottom-right',
     'restore',
     'robot-happy',
     'search-list',

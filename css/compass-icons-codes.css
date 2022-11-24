@@ -171,6 +171,7 @@
 .icon-radiobox-blank:before { content: '󰐽'; } /* '\f043d' */
 .icon-radiobox-marked:before { content: '󰐾'; } /* '\f043e' */
 .icon-refresh:before { content: '󰑐'; } /* '\f0450' */
+.icon-resize-bottom-right:before { content: '󰑝'; } /* '\f045d' */
 .icon-send:before { content: '󰒊'; } /* '\f048a' */
 .icon-shield-outline:before { content: '󰒙'; } /* '\f0499' */
 .icon-shuffle-variant:before { content: '󰒟'; } /* '\f049f' */
