@@ -74,6 +74,7 @@
 .icon-at:before { content: '󰁥'; } /* '\f0065' */
 .icon-flask-outline:before { content: '󰂖'; } /* '\f0096' */
 .icon-bell-outline:before { content: '󰂜'; } /* '\f009c' */
+.icon-bell-ring-outline:before { content: '󰂟'; } /* '\f009f' */
 .icon-bookmark:before { content: '󰃀'; } /* '\f00c0' */
 .icon-bookmark-outline:before { content: '󰃃'; } /* '\f00c3' */
 .icon-cellphone:before { content: '󰄜'; } /* '\f011c' */

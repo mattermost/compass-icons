@@ -73,6 +73,7 @@
 .icon-at { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0065;&nbsp;'); }
 .icon-flask-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0096;&nbsp;'); }
 .icon-bell-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf009c;&nbsp;'); }
+.icon-bell-ring-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf009f;&nbsp;'); }
 .icon-bookmark { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00c0;&nbsp;'); }
 .icon-bookmark-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00c3;&nbsp;'); }
 .icon-cellphone { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf011c;&nbsp;'); }

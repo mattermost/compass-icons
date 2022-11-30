@@ -31,6 +31,7 @@ const IconGlyphs = [
     'beach-umbrella-outline',
     'bell-off-outline',
     'bell-outline',
+    'bell-ring-outline',
     'book-lock-outline',
     'book-outline',
     'bookmark-outline',
