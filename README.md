@@ -10,6 +10,17 @@ Simple steps to adding new icons to the Compass Icons font
 
 -   Go to https://materialdesignicons.com/ and search for the icon you want to add (stick to outline icon styles as per our [iconography](https://zeroheight.com/29be2c109/p/19c648-iconography) guide)
 -   Download the icon as ".SVG Optimized"
+- Open the SVG file in a text editor and copy the whole `<path />` tag
+- Using the SVG code template below, replace `<path ADD PATH HERE />` with the path you've copied in the previous step
+- Save the file
+
+```SVG
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"> 
+    <path ADD PATH HERE />
+</svg>
+```
 
 #### **Determine the Character code**
 
@@ -27,8 +38,17 @@ Simple steps to adding new icons to the Compass Icons font
 -   Choose to "Save As" an "SVG", ensuring to set the "Decimal Places" field is set to a value of "3" (This ensures your shapes are saved out with an accurate level of detail)
 -   Click the "SVG Code..." button
 -   Copy the entire <path> tag
--   Open the optimized ["SVG Template.svg"](https://drive.google.com/open?id=1mZ1J-jL7WpSCUqTf7Mkd7OmhY--iFARS&authuser=michael.gamble%40mattermost.com&usp=drive_fs) located in the root of the repository in a text editor of your choice
--   Paste the <path> in your clipboard over the path in the template file and save as
+-   Using the SVG code template below, replace `<path ADD PATH HERE />` with the path you've copied in the previous step
+
+```SVG
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"> 
+    <path ADD PATH HERE />
+</svg>
+```
+
+- Save the file as an .svg file
 
 #### Naming your custom SVG
 
@@ -61,11 +81,11 @@ Simple steps to adding new icons to the Compass Icons font
 
 ## Rename the SVG
 
--   Append the identified hexadecimal character code to the filename after a pipe character e.g. "account-outline|F0013.svg".
+-   Append the identified hexadecimal character code to the filename after an underscore (_) character e.g. "account-outline_F0013.svg".
 
 ## Import into Github Repository
 
-#### Upload your font file to the SVG folder
+#### Upload your svg file to the SVG folder in the repository
 
 -   In your browser navigate to the 'svgs' subfolder of the compass-icons repo
 -   https://github.com/mattermost/compass-icons/tree/master/svgs
