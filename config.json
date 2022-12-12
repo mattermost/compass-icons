@@ -2485,6 +2485,20 @@
       ]
     },
     {
+      "uid": "ebffc45e10f33f47ae76fed37528315d",
+      "css": "keyboard-return",
+      "code": 983825,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M791.7 291.7V458.3H242.9L392.1 308.8 333.3 250 83.3 500 333.3 750 392.1 690.8 242.9 541.7H875V291.7H791.7Z",
+        "width": 1000
+      },
+      "search": [
+        "keyboard-return"
+      ]
+    },
+    {
       "uid": "b1daeebef6221919e4b35d9fde497c50",
       "css": "laptop",
       "code": 983842,

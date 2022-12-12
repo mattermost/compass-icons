@@ -133,6 +133,7 @@
 .icon-import { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02fa;&nbsp;'); }
 .icon-information-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02fd;&nbsp;'); }
 .icon-key-variant { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf030b;&nbsp;'); }
+.icon-keyboard-return { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0311;&nbsp;'); }
 .icon-laptop { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0322;&nbsp;'); }
 .icon-leaf { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf032a;&nbsp;'); }
 .icon-lightbulb-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0336;&nbsp;'); }

@@ -134,6 +134,7 @@
 .icon-import:before { content: '󰋺'; } /* '\f02fa' */
 .icon-information-outline:before { content: '󰋽'; } /* '\f02fd' */
 .icon-key-variant:before { content: '󰌋'; } /* '\f030b' */
+.icon-keyboard-return:before { content: '󰌑'; } /* '\f0311' */
 .icon-laptop:before { content: '󰌢'; } /* '\f0322' */
 .icon-leaf:before { content: '󰌪'; } /* '\f032a' */
 .icon-lightbulb-outline:before { content: '󰌶'; } /* '\f0336' */

@@ -178,6 +178,7 @@ const IconGlyphs = [
     'kanban',
     'key-variant-circle',
     'key-variant',
+    'keyboard-return',
     'laptop',
     'layers-outline',
     'leaf-outline',
