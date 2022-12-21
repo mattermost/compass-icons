@@ -226,6 +226,7 @@ const IconGlyphs = [
     'phone-hangup',
     'phone-in-talk',
     'phone-outline',
+    'phone',
     'pin-outline',
     'pin',
     'play-box-multiple-outline',

@@ -163,6 +163,7 @@
 .icon-open-in-new:before { content: '󰏌'; } /* '\f03cc' */
 .icon-paperclip:before { content: '󰏢'; } /* '\f03e2' */
 .icon-pause:before { content: '󰏤'; } /* '\f03e4' */
+.icon-phone:before { content: '󰏲'; } /* '\f03f2' */
 .icon-phone-hangup:before { content: '󰏵'; } /* '\f03f5' */
 .icon-phone-in-talk:before { content: '󰏶'; } /* '\f03f6' */
 .icon-pin:before { content: '󰐃'; } /* '\f0403' */
