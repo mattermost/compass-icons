@@ -63,8 +63,8 @@ const ${name}Icon: React.FC<IconProps> = ({ size, color, ...rest}: IconProps): J
     <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        width={size || 24}
-        height={size || 24}
+        width={size || '1em'}
+        height={size || '1em'}
         fill={color || 'currentColor'}
         viewBox="0 0 24 24"
         {...rest}
@@ -142,7 +142,7 @@ const createComponentIndex = (files) =>
 
 const createComponentProps = () =>
     new Promise((resolve) => {
-        const indexFileData = `type IconProps = {\n\tsize?:number;\n\tcolor?:string;\n\ttitle?:string;\n};\n\nexport default IconProps;`;
+        const indexFileData = `type IconProps = {\n\tsize?:number|string;\n\tcolor?:string;\n\ttitle?:string;\n};\n\nexport default IconProps;`;
 
         fs.writeFile(path.join(componentPath, 'props.ts'), indexFileData, () => {});
         resolve();
