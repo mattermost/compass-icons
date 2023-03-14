@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg">
-<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<metadata>Copyright (C) 2023 by original authors @ fontello.com</metadata>
 <defs>
 <font id="compass-icons" horiz-adv-x="1000" >
 <font-face font-family="compass-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
@@ -524,7 +524,7 @@
 
 <glyph glyph-name="file-video-outline" unicode="&#xf0e2c;" d="M583 767l250-250v-500a83 83 0 0 0-83-84h-500a83 83 0 0 0-83 84v666a83 83 0 0 0 83 84h333m167-750v458h-208v208h-292v-666h500m-83 83l-104 71v-71h-230v208h230v-70l104 70v-208z" horiz-adv-x="1000" />
 
-<glyph glyph-name="hand-right" unicode="&#xf0e47;" d="M875 576v-504a139 139 0 0 0-139-139h-253c-38 0-73 15-99 42l-273 277c0 0 44 43 45 43 8 7 17 10 28 10 7 0 14-2 21-5 1-1 149-86 149-86v414a52 52 0 0 0 52 52 52 52 0 0 0 52-52v-243h35v330a52 52 0 0 0 52 52c29 0 52-24 52-52v-330h35v295c0 29 23 52 52 52a52 52 0 0 0 52-52v-295h35v191a52 52 0 0 0 52 52 52 52 0 0 0 52-52z" horiz-adv-x="1000" />
+<glyph glyph-name="hand-right" unicode="&#xf0e47;" d="M543-67c-113 0-214 70-256 174l-106 265c-10 27 15 55 43 46l28-9c19-7 35-21 43-41l49-122h26v408c0 24 19 43 43 43s44-19 44-43v-304h34v373c0 24 20 44 44 44s43-20 43-44v-373h35v321c0 24 19 44 43 44s44-20 44-44v-321h34v217c0 24 20 43 44 43s43-19 43-43v-356c0-153-124-278-278-278z" horiz-adv-x="1000" />
 
 <glyph glyph-name="file-image-outline" unicode="&#xf0eb0;" d="M583 767l250-250v-500a83 83 0 0 0-83-84h-500a83 83 0 0 0-83 84v666a83 83 0 0 0 83 84h333m167-750v458h-208v208h-292v-666h500m-42 291v-250h-416l208 209 83-84m-166 230a63 63 0 0 0-63-63 63 63 0 0 0-62 63 63 63 0 0 0 62 62 63 63 0 0 0 63-62z" horiz-adv-x="1000" />
 
@@ -581,6 +581,8 @@
 <glyph glyph-name="lightning-bolt-outline" unicode="&#xf140c;" d="M458 455v-63h157l-73-147v63h-157l73 147m84 353l-292-583h208v-333l292 583h-208v333z" horiz-adv-x="1000" />
 
 <glyph glyph-name="power-plug-outline" unicode="&#xf1425;" d="M759 343l117 118c17 16 17 43 0 59-16 16-42 16-59 0l-117-118-148 148 118 117c16 17 16 43 0 59-16 17-43 17-59 0l-118-117-118 117c-16 17-42 17-58 0l-1 0c-16-16-16-43 0-59l30-29-133-133c-112-112-121-288-26-410-1-1-2-1-3-2l-88-88c-17-17-17-43 0-60s42-16 59 0l88 89c1 1 1 2 2 3 122-95 298-86 410 26l133 133 29-30c16-16 43-16 59 0l0 1c17 16 17 42 0 58l-117 118z m-163-221c-89-89-234-89-324 0s-89 235 0 324l133 133 324-324-133-133z" horiz-adv-x="1000" />
+
+<glyph glyph-name="monitor-share" unicode="&#xf1483;" d="M958 683v-500c0-25-8-41-25-62-16-13-37-21-58-21h-250v83h250v500h-750v-500h250v-83h-250c-25 0-42 8-62 25-13 17-21 33-21 58v500c0 21 8 42 25 59 16 16 37 25 58 25h750c25 0 42-9 58-25 17-17 25-34 25-59z m-416-375h125l-167 167-167-167h125v-291h-125v-84h334v84h-125v291z" horiz-adv-x="1000" />
 
 <glyph glyph-name="car-outline" unicode="&#xf14ed;" d="M788 600c-9 25-34 42-59 42h-458c-29 0-50-17-58-42l-88-250v-333c0-21 21-42 42-42h41c25 0 42 21 42 42v41h500v-41c0-21 21-42 42-42h41c21 0 42 21 42 42v333l-87 250m-505-42h430l45-125h-516l41 125m509-416h-584v208h584v-208m-479 166c33 0 62-29 62-62s-29-63-62-63-63 30-63 63 29 62 63 62m375 0c33 0 62-29 62-62s-29-63-62-63c-34 0-63 30-63 63s29 62 63 62z" horiz-adv-x="1000" />
 

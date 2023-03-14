@@ -298,6 +298,7 @@
 .icon-play-box-multiple-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf13e6;&nbsp;'); }
 .icon-lightning-bolt-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf140c;&nbsp;'); }
 .icon-power-plug-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1425;&nbsp;'); }
+.icon-monitor-share { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1483;&nbsp;'); }
 .icon-car-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf14ed;&nbsp;'); }
 .icon-share-variant-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1514;&nbsp;'); }
 .icon-application-cog { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1577;&nbsp;'); }

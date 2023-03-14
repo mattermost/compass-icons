@@ -215,6 +215,7 @@ const IconGlyphs = [
     'minus-circle',
     'minus',
     'monitor-off',
+    'monitor-share',
     'monitor',
     'notebook-outline',
     'oauth',
