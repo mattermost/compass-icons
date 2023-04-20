@@ -11,7 +11,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
             - name: npm install and package
               run: |
                   npm install
@@ -23,12 +23,12 @@ jobs:
                   mv fontello/demo.html fontello/index.html
                   cp ./build/IconGlyphs* ./fontello
             - name: Archive artifacts
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v3
               with:
                   name: CompassIconFont
                   path: fontello
             - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@4.1.4
+              uses: JamesIves/github-pages-deploy-action@4.4.1
               with:
                   branch: gh-pages
                   folder: fontello
