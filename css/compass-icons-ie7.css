@@ -140,9 +140,7 @@ erHTML = '&#xf033a;&nbsp;'); }
 .icon-crown-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf11d0;&nbsp;'); }
 .icon-view-grid-plus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf11da;&nbsp;'); }
 .icon-archive-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf120e;&nbsp;'); }
-.icon-exclamation-thick { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1238;&nbsp;'); }
-.icon-folder-move-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1246;&nbsp;'); }
-.icon-archive-arrow-up-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1[class^="icon-"], [class*=" icon-"] {
+.icon-excla[class^="icon-"], [class*=" icon-"] {
   font-family: 'compass-icons';
   font-style: normal;
   font-weight: normal;
@@ -294,7 +292,9 @@ erHTML = '&#xf033a;&nbsp;'); }
 .icon-leaf { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf032a;&nbsp;'); }
 .icon-lightbulb-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0336;&nbsp;'); }
 .icon-link-variant { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0339;&nbsp;'); }
-.icon-link-variant-off { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.inn25c;&nbsp;'); }
+.icon-link-variant-off { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innmation-thick { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1238;&nbsp;'); }
+.icon-folder-move-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1246;&nbsp;'); }
+.icon-archive-arrow-up-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf125c;&nbsp;'); }
 .icon-message-arrow-right-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf12f5;&nbsp;'); }
 .icon-play-box-multiple-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf13e6;&nbsp;'); }
 .icon-lightning-bolt-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf140c;&nbsp;'); }

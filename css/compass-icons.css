@@ -1,4 +1,65 @@
- TWBS */
+on-email-plus-outline:before { content: '󰧬'; } /* '\f09ec' */
+.icon-text-box-outline:before { content: '󰧭'; } /* '\f09ed' */
+.icon-file-text-outline:before { content: '󰧮'; } /* '\f09ee' */
+.icon-layers-outline:before { content: '󰧾'; } /* '\f09fe' */
+.icon-table-plus:before { content: '󰩵'; } /* '\f0a75' */
+.icon-table-remove:before { content: '󰩶'; } /* '\f0a76' */
+.icon-trash-can-outline:before { content: '󰩺'; } /* '\f0a7a' */
+.icon-bell-off-outline:before { content: '󰪑'; } /* '\f0a91' */
+.icon-account-minus-outline:before { content: '󰫬'; } /* '\f0aec' */
+.icon-bullhorn-outline:before { content: '󰬣'; } /* '\f0b23' */
+.icon-chevron-down-circle-outline:before { content: '󰬧'; } /* '\f0b27' */
+.icon-format-letter-case:before { content: '󰬴'; } /* '\f0b34' */
+.icon-book-outline:before { content: '󰭤'; } /* '\f0b@charset "UTF-8";
+@font-face {
+  font-family: 'compass-icons';
+  src: url('../font/compass-icons.eot?1144429');
+  src: url('../font/compass-icons.eot?1144429#iefix') format('embedded-opentype'),
+       url('../font/compass-icons.woff2?1144429') format('woff2'),
+       url('../font/compass-icons.woff?1144429') format('woff'),
+       url('../font/compass-icons.ttf?1144429') format('truetype'),
+       url('../font/compass-icons.svg?1144429#compass-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'compass-icons';
+    src: url('../font/compass-icons.svg?1144429#compass-icons') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "compass-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -236,68 +297,7 @@
 .icon-image-outline:before { content: '󰥶'; } /* '\f0976' */
 .icon-restore:before { content: '󰦛'; } /* '\f099b' */
 .icon-arrow-right-bold-outline:before { content: '󰧂'; } /* '\f09c2' */
-.ic@charset "UTF-8";
-@font-face {
-  font-family: 'compass-icons';
-  src: url('../font/compass-icons.eot?9173690');
-  src: url('../font/compass-icons.eot?9173690#iefix') format('embedded-opentype'),
-       url('../font/compass-icons.woff2?9173690') format('woff2'),
-       url('../font/compass-icons.woff?9173690') format('woff'),
-       url('../font/compass-icons.ttf?9173690') format('truetype'),
-       url('../font/compass-icons.svg?9173690#compass-icons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'compass-icons';
-    src: url('../font/compass-icons.svg?9173690#compass-icons') format('svg');
-  }
-}
-*/
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "compass-icons";
-  font-style: normal;
-  font-weight: normal;
-  speak: never;
-
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-
-  /* Font smoothing. That was taken fromon-email-plus-outline:before { content: '󰧬'; } /* '\f09ec' */
-.icon-text-box-outline:before { content: '󰧭'; } /* '\f09ed' */
-.icon-file-text-outline:before { content: '󰧮'; } /* '\f09ee' */
-.icon-layers-outline:before { content: '󰧾'; } /* '\f09fe' */
-.icon-table-plus:before { content: '󰩵'; } /* '\f0a75' */
-.icon-table-remove:before { content: '󰩶'; } /* '\f0a76' */
-.icon-trash-can-outline:before { content: '󰩺'; } /* '\f0a7a' */
-.icon-bell-off-outline:before { content: '󰪑'; } /* '\f0a91' */
-.icon-account-minus-outline:before { content: '󰫬'; } /* '\f0aec' */
-.icon-bullhorn-outline:before { content: '󰬣'; } /* '\f0b23' */
-.icon-chevron-down-circle-outline:before { content: '󰬧'; } /* '\f0b27' */
-.icon-format-letter-case:before { content: '󰬴'; } /* '\f0b34' */
-.icon-book-outline:before { content: '󰭤'; } /* '\f0b64' */
+.ic64' */
 .icon-calendar-outline:before { content: '󰭧'; } /* '\f0b67' */
 .icon-download-outline:before { content: '󰮏'; } /* '\f0b8f' */
 .icon-export-variant:before { content: '󰮓'; } /* '\f0b93' */
