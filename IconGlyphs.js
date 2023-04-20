@@ -32,6 +32,7 @@ const IconGlyphs = [
     'bell-off-outline',
     'bell-outline',
     'bell-ring-outline',
+    'bluetooth',
     'book-lock-outline',
     'book-outline',
     'bookmark-outline',

@@ -1,53 +1,4 @@
-@charset "UTF-8";
-@font-face {
-  font-family: 'compass-icons';
-  src: url('../font/compass-icons.eot?13141105');
-  src: url('../font/compass-icons.eot?13141105#iefix') format('embedded-opentype'),
-       url('../font/compass-icons.woff2?13141105') format('woff2'),
-       url('../font/compass-icons.woff?13141105') format('woff'),
-       url('../font/compass-icons.ttf?13141105') format('truetype'),
-       url('../font/compass-icons.svg?13141105#compass-icons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'compass-icons';
-    src: url('../font/compass-icons.svg?13141105#compass-icons') format('svg');
-  }
-}
-*/
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "compass-icons";
-  font-style: normal;
-  font-weight: normal;
-  speak: never;
-
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-
-  /* Font smoothing. That was taken from TWBS */
+ TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -130,6 +81,7 @@
 .icon-flask-outline:before { content: '󰂖'; } /* '\f0096' */
 .icon-bell-outline:before { content: '󰂜'; } /* '\f009c' */
 .icon-bell-ring-outline:before { content: '󰂟'; } /* '\f009f' */
+.icon-bluetooth:before { content: '󰂯'; } /* '\f00af' */
 .icon-bookmark:before { content: '󰃀'; } /* '\f00c0' */
 .icon-bookmark-outline:before { content: '󰃃'; } /* '\f00c3' */
 .icon-cellphone:before { content: '󰄜'; } /* '\f011c' */
@@ -284,7 +236,56 @@
 .icon-image-outline:before { content: '󰥶'; } /* '\f0976' */
 .icon-restore:before { content: '󰦛'; } /* '\f099b' */
 .icon-arrow-right-bold-outline:before { content: '󰧂'; } /* '\f09c2' */
-.icon-email-plus-outline:before { content: '󰧬'; } /* '\f09ec' */
+.ic@charset "UTF-8";
+@font-face {
+  font-family: 'compass-icons';
+  src: url('../font/compass-icons.eot?9173690');
+  src: url('../font/compass-icons.eot?9173690#iefix') format('embedded-opentype'),
+       url('../font/compass-icons.woff2?9173690') format('woff2'),
+       url('../font/compass-icons.woff?9173690') format('woff'),
+       url('../font/compass-icons.ttf?9173690') format('truetype'),
+       url('../font/compass-icons.svg?9173690#compass-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'compass-icons';
+    src: url('../font/compass-icons.svg?9173690#compass-icons') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "compass-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken fromon-email-plus-outline:before { content: '󰧬'; } /* '\f09ec' */
 .icon-text-box-outline:before { content: '󰧭'; } /* '\f09ed' */
 .icon-file-text-outline:before { content: '󰧮'; } /* '\f09ee' */
 .icon-layers-outline:before { content: '󰧾'; } /* '\f09fe' */
