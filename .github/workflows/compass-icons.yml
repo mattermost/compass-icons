@@ -19,21 +19,22 @@ jobs:
               run: npm run build
             - name: npm build:data
               run: npm run build:data
-            - name: build:data Artifacts
-              uses: actions/upload-artifact@v3
-              with:
-                  name: builddata
-                  path: |
-                    .
-                    !node_modules
-            - name: npm package:font
+            # - name: build:data Artifacts
+            #   uses: actions/upload-artifact@v3
+            #   with:
+            #       name: builddata
+            #       path: |
+            #         .
+            #         !node_modules
+            - name: Download demo package from Fontello
               run: |
-                npm run package:font
-                cat fontello*/demo.html
-            - name: package:font Artifacts
+                curl https://fontello.com/`cat .fontello-session`/get > fontello.zip
+                7z x fontello.zip
+                rm fontello.zip
+            - name: Post-Fontello Artifacts
               uses: actions/upload-artifact@v3
               with:
-                  name: packagefont
+                  name: postfontello
                   path: |
                     .
                     !node_modules

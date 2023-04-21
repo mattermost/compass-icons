@@ -13,9 +13,7 @@
         "build:font": "fontello-cli --css ./build/css --font ./build/font install",
         "build:typescript": "tsc",
         "open": "npm run build:data && npm run open:font",
-        "open:font": "fontello-cli open",
-        "package": "npm run build:data && npm run package:font",
-        "package:font": "curl https://fontello.com/`cat .fontello-session`/get > fontello.zip && 7z x fontello.zip"
+        "open:font": "fontello-cli open"
     },
     "keywords": [
         "mattermost",
