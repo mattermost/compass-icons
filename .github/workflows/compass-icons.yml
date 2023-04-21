@@ -5,6 +5,7 @@ on:
     push:
         branches:
             - master
+            - hh_test
 
 jobs:
     build:
@@ -27,8 +28,8 @@ jobs:
               with:
                   name: CompassIconFont
                   path: fontello
-            - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@v4.4.1
-              with:
-                  branch: gh-pages
-                  folder: fontello
+            # - name: Deploy
+            #   uses: JamesIves/github-pages-deploy-action@v4.4.1
+            #   with:
+            #       branch: gh-pages
+            #       folder: fontello
