@@ -26,8 +26,6 @@ jobs:
                   path: |
                     .
                     !node_modules
-            - name: Zzzzz
-              run: sleep 10
             - name: npm package:font
               run: |
                 npm run package:font
