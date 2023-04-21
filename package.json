@@ -7,14 +7,14 @@
     "scripts": {
         "start": "npm run build",
         "clean": "rm -rf config.json build .fontello-session fontello* node_modules",
-        "build": "run-s build:data build:prettify build:typescript build:font",
+        "build": "npm run build:data && npm run build:prettify && npm run build:typescript && npm run build:font",
         "build:data": "node -r esm generate-data.js",
         "build:prettify": "npx prettier --write .",
         "build:font": "fontello-cli --css ./build/css --font ./build/font install",
         "build:typescript": "tsc",
-        "open": "run-s build:data open:font",
+        "open": "npm run build:data && npm run open:font",
         "open:font": "fontello-cli open",
-        "package": "run-s build:data package:font",
+        "package": "npm run build:data && npm run package:font",
         "package:font": "fontello-cli install"
     },
     "keywords": [
