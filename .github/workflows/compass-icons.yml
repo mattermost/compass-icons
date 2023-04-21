@@ -9,7 +9,7 @@ on:
 
 jobs:
     build:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-22.04
         steps:
             - name: Checkout repository
               uses: actions/checkout@v3
@@ -29,7 +29,9 @@ jobs:
             - name: Zzzzz
               run: sleep 10
             - name: npm package:font
-              run: npm run package:font
+              run: |
+                npm run package:font
+                cat fontello*/demo.html
             - name: package:font Artifacts
               uses: actions/upload-artifact@v3
               with:
