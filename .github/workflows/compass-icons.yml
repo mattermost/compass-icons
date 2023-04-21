@@ -18,6 +18,11 @@ jobs:
                   npm install
                   npm run build
                   npm run package
+            - name: Artifacts before fontello
+              uses: actions/upload-artifact@v3
+              with:
+                  name: Before
+                  path: .
             - name: Rename downloaded fontello package
               run: |
                   mv fontello* fontello
