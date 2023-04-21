@@ -22,7 +22,7 @@ jobs:
                   path: |
                     !node_modules
             - name: npm build
-              run: npm build
+              run: npm run build
             - name: build Artifacts
               uses: actions/upload-artifact@v3
               with:
@@ -30,13 +30,18 @@ jobs:
                   path: |
                     !node_modules
             - name: npm package
-              run: npm package
+              run: npm run package
             - name: package Artifacts
               uses: actions/upload-artifact@v3
               with:
                   name: package
                   path: |
                     !node_modules
+            # - name: npm install and package
+            #   run: |
+            #       npm install
+            #       npm run build
+            #       npm run package
             - name: Rename downloaded fontello package
               run: |
                   mv fontello* fontello
