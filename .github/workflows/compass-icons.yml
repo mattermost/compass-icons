@@ -23,6 +23,9 @@ jobs:
                   mv fontello* fontello
                   mv fontello/demo.html fontello/index.html
                   cp ./build/IconGlyphs* ./fontello
+            - name: Print stuff
+              run: |
+                  cat fontello/index.html
             - name: Archive artifacts
               uses: actions/upload-artifact@v3
               with:
