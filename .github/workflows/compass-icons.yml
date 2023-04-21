@@ -31,12 +31,21 @@ jobs:
                   path: |
                     .
                     !node_modules
-            - name: npm package
-              run: npm run package
-            - name: package Artifacts
+            - name: npm build:data
+              run: npm run build:data
+            - name: build:data Artifacts
               uses: actions/upload-artifact@v3
               with:
-                  name: package
+                  name: builddata
+                  path: |
+                    .
+                    !node_modules
+            - name: npm package:font
+              run: npm run package:font
+            - name: package:font Artifacts
+              uses: actions/upload-artifact@v3
+              with:
+                  name: packagefont
                   path: |
                     .
                     !node_modules
