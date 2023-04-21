@@ -20,6 +20,7 @@ jobs:
               with:
                   name: Install
                   path: |
+                    .
                     !node_modules
             - name: npm build
               run: npm run build
@@ -28,6 +29,7 @@ jobs:
               with:
                   name: build
                   path: |
+                    .
                     !node_modules
             - name: npm package
               run: npm run package
@@ -36,6 +38,7 @@ jobs:
               with:
                   name: package
                   path: |
+                    .
                     !node_modules
             # - name: npm install and package
             #   run: |
