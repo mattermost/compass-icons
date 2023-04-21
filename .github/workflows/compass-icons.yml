@@ -13,24 +13,35 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v3
-            - name: npm install and package
-              run: |
-                  npm install
-                  npm run build
-                  npm run package
-            - name: Artifacts before fontello
+            - name: npm install
+              run: npm install
+            - name: Install Artifacts
               uses: actions/upload-artifact@v3
               with:
-                  name: Before
-                  path: .
+                  name: Install
+                  path: |
+                    !node_modules
+            - name: npm build
+              run: npm build
+            - name: build Artifacts
+              uses: actions/upload-artifact@v3
+              with:
+                  name: build
+                  path: |
+                    !node_modules
+            - name: npm package
+              run: npm package
+            - name: package Artifacts
+              uses: actions/upload-artifact@v3
+              with:
+                  name: package
+                  path: |
+                    !node_modules
             - name: Rename downloaded fontello package
               run: |
                   mv fontello* fontello
                   mv fontello/demo.html fontello/index.html
                   cp ./build/IconGlyphs* ./fontello
-            - name: Print stuff
-              run: |
-                  cat fontello/index.html
             - name: Archive artifacts
               uses: actions/upload-artifact@v3
               with:
