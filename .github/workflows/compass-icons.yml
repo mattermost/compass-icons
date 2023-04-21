@@ -12,11 +12,15 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v3
-            - name: npm install and package
+            - name: npm install and build
               run: |
                   npm install
                   npm run build
-                  npm run package
+            - name: Download demo package from Fontello
+              run: |
+                curl https://fontello.com/`cat .fontello-session`/get > fontello.zip
+                7z x fontello.zip
+                rm fontello.zip
             - name: Rename downloaded fontello package
               run: |
                   mv fontello* fontello
