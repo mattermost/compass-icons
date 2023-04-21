@@ -15,22 +15,8 @@ jobs:
               uses: actions/checkout@v3
             - name: npm install
               run: npm install
-            - name: Install Artifacts
-              uses: actions/upload-artifact@v3
-              with:
-                  name: Install
-                  path: |
-                    .
-                    !node_modules
             - name: npm build
               run: npm run build
-            - name: build Artifacts
-              uses: actions/upload-artifact@v3
-              with:
-                  name: build
-                  path: |
-                    .
-                    !node_modules
             - name: npm build:data
               run: npm run build:data
             - name: build:data Artifacts
@@ -40,6 +26,8 @@ jobs:
                   path: |
                     .
                     !node_modules
+            - name: Zzzzz
+              run: sleep 10
             - name: npm package:font
               run: npm run package:font
             - name: package:font Artifacts
