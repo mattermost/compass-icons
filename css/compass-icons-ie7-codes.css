@@ -192,6 +192,7 @@
 .icon-table-row-plus-after { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04f3;&nbsp;'); }
 .icon-table-row-plus-before { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04f4;&nbsp;'); }
 .icon-table-row-remove { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04f5;&nbsp;'); }
+.icon-tablet { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04f6;&nbsp;'); }
 .icon-thumbs-up-down { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0515;&nbsp;'); }
 .icon-beach-umbrella-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf054b;&nbsp;'); }
 .icon-volume-high { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf057e;&nbsp;'); }

@@ -193,6 +193,7 @@
 .icon-table-row-plus-after:before { content: '󰓳'; } /* '\f04f3' */
 .icon-table-row-plus-before:before { content: '󰓴'; } /* '\f04f4' */
 .icon-table-row-remove:before { content: '󰓵'; } /* '\f04f5' */
+.icon-tablet:before { content: '󰓶'; } /* '\f04f6' */
 .icon-thumbs-up-down:before { content: '󰔕'; } /* '\f0515' */
 .icon-beach-umbrella-outline:before { content: '󰕋'; } /* '\f054b' */
 .icon-volume-high:before { content: '󰕾'; } /* '\f057e' */

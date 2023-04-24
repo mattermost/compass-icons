@@ -286,6 +286,7 @@ const IconGlyphs = [
     'table-row-plus-before',
     'table-row-remove',
     'table-settings',
+    'tablet',
     'text-box-outline',
     'thumbs-up-down',
     'timeline-text-outline',
