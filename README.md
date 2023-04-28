@@ -8,7 +8,7 @@ Simple steps to adding new icons to the Compass Icons font
 
 #### Locate your icon
 
--   Go to https://materialdesignicons.com/ and search for the icon you want to add (stick to outline icon styles as per our [iconography](https://zeroheight.com/29be2c109/p/19c648-iconography) guide)
+-   Go to https://pictogrammers.com/library/mdi/ and search for the icon you want to add (stick to outline icon styles as per our [iconography](https://zeroheight.com/29be2c109/p/19c648-iconography) guide)
 -   Download the icon as ".SVG Optimized"
 - Open the SVG file in a text editor and copy the whole `<path />` tag
 - Using the SVG code template below, replace `<path ADD PATH HERE />` with the path you've copied in the previous step
@@ -24,7 +24,7 @@ Simple steps to adding new icons to the Compass Icons font
 
 #### **Determine the Character code**
 
--   Locate the hexadecimal character code of the icon you just downloaded in the materialdesignicons.com [cheat sheet](https://cdn.materialdesignicons.com/5.3.45/) (use chromes find in page)
+-   Locate the hexadecimal character code of the icon you just downloaded from https://pictogrammers.com/library/mdi/
 
 ## Adding Custom Icons
 
@@ -52,13 +52,13 @@ Simple steps to adding new icons to the Compass Icons font
 
 #### Naming your custom SVG
 
--   Try to match the naming conventions used in the material design icon open source [cheetsheet](https://cdn.materialdesignicons.com/5.3.45/)
+-   Try to match the naming conventions used in the material design icon open source [library](https://pictogrammers.com/library/mdi/)
 -   if the icon is the same concept then consider it a replacement and reuse the name (minus the mdi prefix)
 -   if its something new, do your best to try and match for example "someconcept-outline.svg" as it would likely follow the outline style
 
 #### Choosing the character code
 
--   In the same way as the naming, try to reuse the hexadecimal codes in the [cheetsheet](https://cdn.materialdesignicons.com/5.3.45/) if its a replacement icon
+-   In the same way as the naming, try to reuse the hexadecimal codes in the [material design icon library](https://pictogrammers.com/library/mdi/) if its a replacement icon
 -   For anything new we have manually started using the "E800" block of hexadecimal numbers
 -   You'll have to open the [demo.html](https://drive.google.com/open?id=1fEKMDa3hdaAunc7g8-inVKxH50PGYymO&authuser=michael.gamble%40mattermost.com&usp=drive_fs) from the repository root and click on the "show codes" checkbox to determine which is the next available in the sequence
 -   As you can see in the example above "E814" is the last icon in that "E800" block, so your icons character code should be "E815"
