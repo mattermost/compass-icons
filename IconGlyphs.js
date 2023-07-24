@@ -160,6 +160,7 @@ const IconGlyphs = [
     'gfycat',
     'github-circle',
     'glasses',
+    'globe-checked',
     'globe',
     'hammer',
     'hand-right-outline-off',

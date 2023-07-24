@@ -231,6 +231,7 @@
 .icon-format-quote-open { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0757;&nbsp;'); }
 .icon-square { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0764;&nbsp;'); }
 .icon-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0766;&nbsp;'); }
+.icon-globe-checked { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0789;&nbsp;'); }
 .icon-account-plus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0801;&nbsp;'); }
 .icon-forum-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0822;&nbsp;'); }
 .icon-table-settings { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0838;&nbsp;'); }
