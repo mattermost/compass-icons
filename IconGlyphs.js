@@ -166,6 +166,7 @@ const IconGlyphs = [
     'hand-right-outline-off',
     'hand-right-outline',
     'hand-right',
+    'headphones',
     'heart-outline',
     'help-circle-outline',
     'help',

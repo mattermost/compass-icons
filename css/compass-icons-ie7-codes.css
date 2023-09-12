@@ -129,6 +129,7 @@
 .icon-github-circle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02a4;&nbsp;'); }
 .icon-glasses { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02aa;&nbsp;'); }
 .icon-brand-google { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02ad;&nbsp;'); }
+.icon-headphones { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02cb;&nbsp;'); }
 .icon-heart-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02d5;&nbsp;'); }
 .icon-help { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02d6;&nbsp;'); }
 .icon-import { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02fa;&nbsp;'); }

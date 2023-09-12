@@ -130,6 +130,7 @@
 .icon-github-circle:before { content: '󰊤'; } /* '\f02a4' */
 .icon-glasses:before { content: '󰊪'; } /* '\f02aa' */
 .icon-brand-google:before { content: '󰊭'; } /* '\f02ad' */
+.icon-headphones:before { content: '󰋋'; } /* '\f02cb' */
 .icon-heart-outline:before { content: '󰋕'; } /* '\f02d5' */
 .icon-help:before { content: '󰋖'; } /* '\f02d6' */
 .icon-import:before { content: '󰋺'; } /* '\f02fa' */
