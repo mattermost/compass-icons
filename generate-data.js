@@ -142,7 +142,7 @@ const createComponentIndex = (files) =>
 
 const createComponentProps = () =>
     new Promise((resolve) => {
-        const indexFileData = `type IconProps = {\n\tsize?:number|string;\n\tcolor?:string;\n\ttitle?:string;\n};\n\nexport default IconProps;`;
+        const indexFileData = `type IconProps = {\n\tsize?:number|string;\n\tcolor?:string;\n\ttitle?:string;\n\tclassName?:string;\n};\n\nexport default IconProps;`;
 
         fs.writeFile(path.join(componentPath, 'props.ts'), indexFileData, () => {});
         resolve();
