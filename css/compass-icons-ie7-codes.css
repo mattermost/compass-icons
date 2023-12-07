@@ -258,6 +258,7 @@
 .icon-pencil-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0cb6;&nbsp;'); }
 .icon-camera-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d5d;&nbsp;'); }
 .icon-monitor-off { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d90;&nbsp;'); }
+.icon-closed-caption-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0dbd;&nbsp;'); }
 .icon-phone-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0df0;&nbsp;'); }
 .icon-palette-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e0c;&nbsp;'); }
 .icon-calendar-month-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e18;&nbsp;'); }

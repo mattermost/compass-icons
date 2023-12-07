@@ -73,6 +73,7 @@ const IconGlyphs = [
     'close-circle-outline',
     'close-circle',
     'close',
+    'closed-caption-outline',
     'code-block',
     'code-brackets',
     'code-tags',
