@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg">
-<metadata>Copyright (C) 2023 by original authors @ fontello.com</metadata>
+<metadata>Copyright (C) 2024 by original authors @ fontello.com</metadata>
 <defs>
 <font id="compass-icons" horiz-adv-x="1000" >
 <font-face font-family="compass-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
@@ -512,7 +512,9 @@
 
 <glyph glyph-name="timeline-text-outline" unicode="&#xf0bd4;" d="M208 350c0-46-37-83-83-83-46 0-83 37-83 83 0 46 37 83 83 83 46 0 83-37 83-83m-41 417v-250h-84v250h84m-84-834v250h84v-250h-84m917 667v-500c0-46-37-83-83-83h-500c-46 0-84 37-84 83v167l-83 83 83 83v167c0 46 38 83 84 83h500c46 0 83-37 83-83m-83 0h-500v-201l-49-49 49-49v-201h500v500m-417-125h333v-83h-333v83m0-167h250v-83h-250v83z" horiz-adv-x="1000" />
 
-<glyph glyph-name="video-outline" unicode="&#xf0bdc;" d="M750 517v83c0 46-37 83-83 83h-500c-46 0-84-37-84-83v-500c0-46 38-83 84-83h500c46 0 83 37 83 83v83l106-53c28-14 61 7 61 37v366c0 31-33 51-61 37l-106-53z m83-282l-83 42-53 26c-14 7-30-3-30-18v-60-125h-500v500h500v-125-59c0-16 16-26 30-19l53 27 83 41v-230z" horiz-adv-x="1000" />
+<glyph glyph-name="video-off-outline" unicode="&#xf0bdb;" d="M750 413v145c0 55-29 84-83 84h-275l83-84h192v-191l250-246v458l-167-166z m-667 300l75-71c-45-4-75-38-75-84v-416c0-50 38-84 84-84h500c21 0 41 5 54 17l100-100 58 58-737 738-59-58z m84-155h71l416-416h-487v416z" horiz-adv-x="1000" />
+
+<glyph glyph-name="video-outline" unicode="&#xf0bdc;" d="M750 413v145c0 55-29 84-83 84h-500c-50 0-84-34-84-84v-416c0-50 38-84 84-84h500c54 0 83 34 83 84v146l167-167v458l-167-166z m-83-271h-500v416h500v-416z" horiz-adv-x="1000" />
 
 <glyph glyph-name="calendar-check-outline" unicode="&#xf0c44;" d="M792 683h-42v84h-83v-84h-334v84h-83v-84h-42a83 83 0 0 1-83-83v-583a83 83 0 0 1 83-84h584a83 83 0 0 1 83 84v583a83 83 0 0 1-83 83m0-666h-584v416h584v-416m-584 500v83h584v-83h-584m232-436l248 247-45 44-203-203-88 88-44-44 132-132z" horiz-adv-x="1000" />
 

@@ -252,6 +252,7 @@
 .icon-brand-gitlab { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ba0;&nbsp;'); }
 .icon-home-variant-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ba7;&nbsp;'); }
 .icon-timeline-text-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0bd4;&nbsp;'); }
+.icon-video-off-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0bdb;&nbsp;'); }
 .icon-video-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0bdc;&nbsp;'); }
 .icon-calendar-check-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c44;&nbsp;'); }
 .icon-food-apple { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c84;&nbsp;'); }

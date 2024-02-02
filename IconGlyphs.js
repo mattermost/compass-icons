@@ -296,6 +296,7 @@ const IconGlyphs = [
     'trash-can-outline',
     'tune',
     'update',
+    'video-off-outline',
     'video-outline',
     'view-grid-plus-outline',
     'volume-high',
