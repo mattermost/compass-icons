@@ -2401,6 +2401,20 @@
       ]
     },
     {
+      "uid": "678be0c70dd26fdbb299ee2c64ba1124",
+      "css": "icon-brand-giphy",
+      "code": 59448,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M750 833.3V500L833.3 416.7V916.7H166.7V83.3H487.5L404.2 166.7H250V833.3H750ZM637.5 83.3H541.7V375H833.3V279.2H737.5V179.2H641.7V83.3Z",
+        "width": 1000
+      },
+      "search": [
+        "icon-brand-giphy"
+      ]
+    },
+    {
       "uid": "5e264821ba70073cb4f475bead5726fc",
       "css": "iframe-list-outline",
       "code": 59398,

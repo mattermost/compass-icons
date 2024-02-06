@@ -172,6 +172,7 @@ const IconGlyphs = [
     'help-circle-outline',
     'help',
     'home-variant-outline',
+    'icon-brand-giphy',
     'iframe-list-outline',
     'image-area-outline',
     'image-broken-outline',
