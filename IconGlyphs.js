@@ -80,6 +80,7 @@ const IconGlyphs = [
     'cog-outline',
     'console',
     'content-copy',
+    'creation-outline',
     'credit-card-outline',
     'crown-outline',
     'currency-usd',
