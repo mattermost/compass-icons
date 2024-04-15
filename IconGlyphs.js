@@ -220,6 +220,7 @@ const IconGlyphs = [
     'minus-circle-outline',
     'minus-circle',
     'minus',
+    'monitor-account',
     'monitor-off',
     'monitor-share',
     'monitor',
