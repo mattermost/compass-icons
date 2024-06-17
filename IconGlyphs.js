@@ -199,6 +199,7 @@ const IconGlyphs = [
     'magnify-minus',
     'magnify-plus',
     'magnify',
+    'map-marker-outline',
     'mark-as-unread',
     'mattermost',
     'menu-down',

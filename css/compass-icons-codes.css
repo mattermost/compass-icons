@@ -224,6 +224,7 @@
 .icon-square:before { content: '󰝤'; } /* '\f0764' */
 .icon-circle-outline:before { content: '󰝦'; } /* '\f0766' */
 .icon-globe-checked:before { content: '󰞉'; } /* '\f0789' */
+.icon-map-marker-outline:before { content: '󰟙'; } /* '\f07d9' */
 .icon-account-plus-outline:before { content: '󰠁'; } /* '\f0801' */
 .icon-forum-outline:before { content: '󰠢'; } /* '\f0822' */
 .icon-table-settings:before { content: '󰠸'; } /* '\f0838' */
