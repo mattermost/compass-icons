@@ -264,6 +264,7 @@
 .icon-monitor-off:before { content: '󰶐'; } /* '\f0d90' */
 .icon-closed-caption-outline:before { content: '󰶽'; } /* '\f0dbd' */
 .icon-phone-outline:before { content: '󰷰'; } /* '\f0df0' */
+.icon-upload-outline:before { content: '󰸇'; } /* '\f0e07' */
 .icon-palette-outline:before { content: '󰸌'; } /* '\f0e0c' */
 .icon-calendar-month-outline:before { content: '󰸘'; } /* '\f0e18' */
 .icon-file-video-outline:before { content: '󰸬'; } /* '\f0e2c' */

@@ -4193,6 +4193,20 @@
       ]
     },
     {
+      "uid": "7a511e2ecdf1bd84c543f7b0560f91cd",
+      "css": "upload-outline",
+      "code": 986631,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M791.7 750H208.3V833.3H791.7V750ZM541.7 666.7H458.3V241.7L270.8 429.2 212.5 370.8 500 83.3 787.5 370.8 729.2 429.2 541.7 241.7V666.7Z",
+        "width": 1000
+      },
+      "search": [
+        "upload-outline"
+      ]
+    },
+    {
       "uid": "0c34f9f7ad9bcc9cf6c059dfcecc6f2e",
       "css": "video-off-outline",
       "code": 986075,

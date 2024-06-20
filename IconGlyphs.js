@@ -300,6 +300,7 @@ const IconGlyphs = [
     'trash-can-outline',
     'tune',
     'update',
+    'upload-outline',
     'video-off-outline',
     'video-outline',
     'view-grid-plus-outline',
