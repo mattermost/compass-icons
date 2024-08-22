@@ -233,6 +233,7 @@
 .icon-pin-outline:before { content: '󰤱'; } /* '\f0931' */
 .icon-clock:before { content: '󰥔'; } /* '\f0954' */
 .icon-image-outline:before { content: '󰥶'; } /* '\f0976' */
+.icon-keyboard-outline:before { content: '󰥻'; } /* '\f097b' */
 .icon-restore:before { content: '󰦛'; } /* '\f099b' */
 .icon-arrow-right-bold-outline:before { content: '󰧂'; } /* '\f09c2' */
 .icon-email-plus-outline:before { content: '󰧬'; } /* '\f09ec' */
@@ -247,6 +248,7 @@
 .icon-bullhorn-outline:before { content: '󰬣'; } /* '\f0b23' */
 .icon-chevron-down-circle-outline:before { content: '󰬧'; } /* '\f0b27' */
 .icon-format-letter-case:before { content: '󰬴'; } /* '\f0b34' */
+.icon-backspace-outline:before { content: '󰭜'; } /* '\f0b5c' */
 .icon-book-outline:before { content: '󰭤'; } /* '\f0b64' */
 .icon-calendar-outline:before { content: '󰭧'; } /* '\f0b67' */
 .icon-download-outline:before { content: '󰮏'; } /* '\f0b8f' */

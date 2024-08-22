@@ -232,6 +232,7 @@
 .icon-pin-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0931;&nbsp;'); }
 .icon-clock { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0954;&nbsp;'); }
 .icon-image-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0976;&nbsp;'); }
+.icon-keyboard-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf097b;&nbsp;'); }
 .icon-restore { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf099b;&nbsp;'); }
 .icon-arrow-right-bold-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09c2;&nbsp;'); }
 .icon-email-plus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09ec;&nbsp;'); }
@@ -246,6 +247,7 @@
 .icon-bullhorn-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b23;&nbsp;'); }
 .icon-chevron-down-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b27;&nbsp;'); }
 .icon-format-letter-case { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b34;&nbsp;'); }
+.icon-backspace-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b5c;&nbsp;'); }
 .icon-book-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b64;&nbsp;'); }
 .icon-calendar-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b67;&nbsp;'); }
 .icon-download-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b8f;&nbsp;'); }
