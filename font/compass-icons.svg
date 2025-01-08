@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg">
-<metadata>Copyright (C) 2024 by original authors @ fontello.com</metadata>
+<metadata>Copyright (C) 2025 by original authors @ fontello.com</metadata>
 <defs>
 <font id="compass-icons" horiz-adv-x="1000" >
 <font-face font-family="compass-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
@@ -580,7 +580,7 @@
 
 <glyph glyph-name="message-plus-outline" unicode="&#xf10bb;" d="M833 767h-666c-46 0-84-38-84-84v-750l167 167h583c46 0 84 38 84 83v500c0 46-38 84-84 84m0-584h-583l-83-83v583h666m-166-208v-83h-125v-125h-84v125h-125v83h125v125h84v-125h125z" horiz-adv-x="1000" />
 
-<glyph glyph-name="send-outline" unicode="&#xf1165;" d="M167 599l312-134-312 41 0 93m312-364l-312-134v93l312 41m-396 490l0-292 625-83-625-83 0-292 875 375-875 375z" horiz-adv-x="1000" />
+<glyph glyph-name="send-outline" unicode="&#xf1165;" d="M112 713c-13 5-29-5-29-20v-324-38-324c0-15 16-25 29-20l802 344c17 7 17 31 0 38l-802 344z m55-425l375 62-375 63v186l580-249-580-249v187z" horiz-adv-x="1000" />
 
 <glyph glyph-name="message-minus-outline" unicode="&#xf116f;" d="M833 767h-666c-46 0-84-38-84-84v-750l167 167h583c47 0 84 37 84 83v500c0 46-37 84-84 84m0-584h-583l-83-83v583h666m-500-208v-83h334v83h-334z" horiz-adv-x="1000" />
 
