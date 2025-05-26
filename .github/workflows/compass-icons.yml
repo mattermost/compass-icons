@@ -27,12 +27,12 @@ jobs:
                   mv fontello/demo.html fontello/index.html
                   cp ./build/IconGlyphs* ./fontello
             - name: Archive artifacts
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
               with:
                   name: CompassIconFont
                   path: fontello
             - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@v4.4.1
+              uses: JamesIves/github-pages-deploy-action@6c2d9db40f9296374acc17b90404b6e8864128c8 # v4.7.3
               with:
                   branch: gh-pages
                   folder: fontello
