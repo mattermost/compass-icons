@@ -60,6 +60,7 @@
 .icon-file-code-outline-large:before { content: '\e90b'; } /* '' */
 .icon-file-image-broken-outline-large:before { content: '\e90c'; } /* '' */
 .icon-file-multiple-outline-large:before { content: '\e90d'; } /* '' */
+.icon-element-of:before { content: '\e90e'; } /* '' */
 .icon-account-multiple-outline:before { content: '󰀏'; } /* '\f000f' */
 .icon-account-outline:before { content: '󰀓'; } /* '\f0013' */
 .icon-airplane:before { content: '󰀝'; } /* '\f001d' */
@@ -108,6 +109,7 @@
 .icon-email-outline:before { content: '󰇰'; } /* '\f01f0' */
 .icon-emoticon-outline:before { content: '󰇲'; } /* '\f01f2' */
 .icon-emoticon-happy-outline:before { content: '󰇵'; } /* '\f01f5' */
+.icon-equal:before { content: '󰇼'; } /* '\f01fc' */
 .icon-exit-to-app:before { content: '󰈆'; } /* '\f0206' */
 .icon-file-generic-outline:before { content: '󰈤'; } /* '\f0224' */
 .icon-filter-variant:before { content: '󰈶'; } /* '\f0236' */
@@ -128,6 +130,7 @@
 .icon-format-list-bulleted:before { content: '󰉹'; } /* '\f0279' */
 .icon-format-list-numbered:before { content: '󰉻'; } /* '\f027b' */
 .icon-format-strikethrough-variant:before { content: '󰊁'; } /* '\f0281' */
+.icon-function:before { content: '󰊕'; } /* '\f0295' */
 .icon-github-circle:before { content: '󰊤'; } /* '\f02a4' */
 .icon-glasses:before { content: '󰊪'; } /* '\f02aa' */
 .icon-brand-google:before { content: '󰊭'; } /* '\f02ad' */
@@ -234,6 +237,7 @@
 .icon-clock:before { content: '󰥔'; } /* '\f0954' */
 .icon-image-outline:before { content: '󰥶'; } /* '\f0976' */
 .icon-keyboard-outline:before { content: '󰥻'; } /* '\f097b' */
+.icon-not-equal-variant:before { content: '󰦎'; } /* '\f098e' */
 .icon-restore:before { content: '󰦛'; } /* '\f099b' */
 .icon-arrow-right-bold-outline:before { content: '󰧂'; } /* '\f09c2' */
 .icon-email-plus-outline:before { content: '󰧬'; } /* '\f09ec' */
