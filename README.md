@@ -101,16 +101,26 @@ Simple steps to adding new icons to the Compass Icons font
 -   At this point you are waiting for the approval of the pull request
 -   When the commit is approved by a member of the design team the font package will automatically be created and is ready to download for use (you will get a github notificaiton when approved)
 
-#### Download font package
+#### Download font package and upload to Figma
 
 -   Navigate to the root of the compass-icon repository
 -   https://github.com/mattermost/compass-icons/
 -   Click on the "Actions" tab
 -   Click on the latest "workflow run" that should match your commit title from the previous step.
 -   Under the "Artifacts" section, you will see the "CompassIconFont" package, click it to download locally.
+-   Extract the ttf file and upload to Figma (admin rights required)
 
-## Update the Google Drive Folder
-
--   In your local download folder, double click the file "CompassIconFont.zip" to extract the files
--   Cut, paste, and overwrite the contents of the archive into the [google drive folder](https://drive.google.com/open?id=1PbbhRVmXOI5BzC305qa42OjMtaVlLEYM&authuser=michael.gamble%40mattermost.com&usp=drive_fs).
--   Once the repository is updated, make a post in the Mattermost "[Compass Design System](https://community-daily.mattermost.com/core/channels/compass-design-system)" channel mentioning the "@uxteam" asking for the font to be updated in Figma
+## Cutting a new release for Compass Icons
+-   Checkout latest master
+-   Create a new branch for the new release version (e.g. "version bump")
+-   npm version patch (for minimal updates) or npm version minor or npm version major 
+-   This updates the package.json
+-   Publish your branch
+-   Create a pull request for the version bump
+-   Get it approved and merged in to master
+-   Once merged, go to 'Releases' and click 'Draft new release'
+-   Click 'Choose a tag' and type 0.1.39 (or the version you've created from the npm version above
+-   Give it a title with the version number (e.g. "v0.1.39")
+-   Add a description of what's been added to the release
+-   Check 'Set as the latest release'
+-   Click 'Publish release'
