@@ -58,6 +58,7 @@ const IconGlyphs = [
     'check-circle',
     'check',
     'checkbox-blank-outline',
+    'checkbox-marked-circle-outline',
     'checkbox-marked',
     'checkbox-multiple-marked-outline',
     'chevron-down-circle-outline',

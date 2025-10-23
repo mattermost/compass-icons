@@ -86,6 +86,7 @@
 .icon-check-all { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf012d;&nbsp;'); }
 .icon-checkbox-blank-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0131;&nbsp;'); }
 .icon-checkbox-marked { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0132;&nbsp;'); }
+.icon-checkbox-marked-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0134;&nbsp;'); }
 .icon-checkbox-multiple-marked-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0139;&nbsp;'); }
 .icon-chevron-down { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0140;&nbsp;'); }
 .icon-chevron-left { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0141;&nbsp;'); }
