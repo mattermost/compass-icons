@@ -13,6 +13,7 @@ const IconGlyphs = [
     'application-cog',
     'apps',
     'archive-arrow-up-outline',
+    'archive-lock-outline',
     'archive-outline',
     'arrow-back-ios',
     'arrow-collapse',

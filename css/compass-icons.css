@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'compass-icons';
-  src: url('../font/compass-icons.eot?25208402');
-  src: url('../font/compass-icons.eot?25208402#iefix') format('embedded-opentype'),
-       url('../font/compass-icons.woff2?25208402') format('woff2'),
-       url('../font/compass-icons.woff?25208402') format('woff'),
-       url('../font/compass-icons.ttf?25208402') format('truetype'),
-       url('../font/compass-icons.svg?25208402#compass-icons') format('svg');
+  src: url('../font/compass-icons.eot?80919551');
+  src: url('../font/compass-icons.eot?80919551#iefix') format('embedded-opentype'),
+       url('../font/compass-icons.woff2?80919551') format('woff2'),
+       url('../font/compass-icons.woff?80919551') format('woff'),
+       url('../font/compass-icons.ttf?80919551') format('truetype'),
+       url('../font/compass-icons.svg?80919551#compass-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'compass-icons';
-    src: url('../font/compass-icons.svg?25208402#compass-icons') format('svg');
+    src: url('../font/compass-icons.svg?80919551#compass-icons') format('svg');
   }
 }
 */
@@ -365,6 +365,7 @@
 .icon-application-cog:before { content: '󱕷'; } /* '\f1577' */
 .icon-book-lock-outline:before { content: '󱚏'; } /* '\f168f' */
 .icon-robot-happy:before { content: '󱜙'; } /* '\f1719' */
+.icon-archive-lock-outline:before { content: '󱝚'; } /* '\f175a' */
 .icon-hand-right-outline:before { content: '󱠭'; } /* '\f182d' */
 .icon-hand-right-outline-off:before { content: '󱠳'; } /* '\f1833' */
 .icon-monitor-account:before { content: '󱩛'; } /* '\f1a5b' */
