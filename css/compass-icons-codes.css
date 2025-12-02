@@ -208,6 +208,7 @@
 .icon-volume-high:before { content: '󰕾'; } /* '\f057e' */
 .icon-sort-alphabetical-ascending:before { content: '󰖽'; } /* '\f05bd' */
 .icon-playlist-check:before { content: '󰗇'; } /* '\f05c7' */
+.icon-translate:before { content: '󰗊'; } /* '\f05ca' */
 .icon-alert-circle-outline:before { content: '󰗖'; } /* '\f05d6' */
 .icon-check-circle:before { content: '󰗠'; } /* '\f05e0' */
 .icon-check-circle-outline:before { content: '󰗡'; } /* '\f05e1' */

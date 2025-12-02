@@ -218,6 +218,7 @@
 .icon-volume-high { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf057e;&nbsp;'); }
 .icon-sort-alphabetical-ascending { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05bd;&nbsp;'); }
 .icon-playlist-check { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05c7;&nbsp;'); }
+.icon-translate { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05ca;&nbsp;'); }
 .icon-alert-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05d6;&nbsp;'); }
 .icon-check-circle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05e0;&nbsp;'); }
 .icon-check-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05e1;&nbsp;'); }

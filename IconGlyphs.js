@@ -310,6 +310,7 @@ const IconGlyphs = [
     'text-short',
     'thumbs-up-down',
     'timeline-text-outline',
+    'translate',
     'trash-can-outline',
     'tune',
     'update',
