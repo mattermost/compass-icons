@@ -83,6 +83,7 @@ const IconGlyphs = [
     'code-brackets',
     'code-tags',
     'cog-outline',
+    'condition-branch',
     'console',
     'content-copy',
     'creation-outline',

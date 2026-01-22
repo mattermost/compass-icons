@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg">
-<metadata>Copyright (C) 2025 by original authors @ fontello.com</metadata>
+<metadata>Copyright (C) 2026 by original authors @ fontello.com</metadata>
 <defs>
 <font id="compass-icons" horiz-adv-x="1000" >
 <font-face font-family="compass-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
@@ -99,6 +99,8 @@
 <glyph glyph-name="icon-brand-giphy" unicode="&#xe838;" d="M750 17v333l83 83v-500h-666v834h321l-84-84h-154v-666h500z m-112 750h-96v-292h291v96h-95v100h-96v96z" horiz-adv-x="1000" />
 
 <glyph glyph-name="ai-summarize" unicode="&#xe839;" d="M814 664c-13 13-29 20-48 20h-532c-19 0-35-7-48-20-13-13-20-29-20-48v-600l134 134h466c19 0 35 6 48 19 13 13 20 29 20 47v400c0 19-7 35-20 48z m-580-81v33h532v-400h-494l-38-38v72h-1v333h1z m266 0l-37-130-130-36 130-37 37-130 37 130 130 37-130 36-37 130z m167-200l-15-52-52-14 52-15 15-52 14 52 52 15-52 14-14 52z m-334 200l-14-52-52-14 52-15 14-52 15 52 52 15-52 14-15 52z" horiz-adv-x="1000" />
+
+<glyph glyph-name="condition-branch" unicode="&#xe840;" d="M417 308c0 140-57 186-94 201-19-44-63-76-115-76-69 0-125 56-125 125s56 125 125 125c55 0 101-34 118-83h348c17 49 63 83 118 83 69 0 125-56 125-125s-56-125-125-125c-55 0-101 35-118 84h-221c27-37 47-90 47-167 0-111 56-148 93-160 19 45 63 77 115 77 69 0 125-56 125-125s-56-125-125-125c-55 0-104 36-119 87-59 11-172 51-172 204m-167 250c0 23-19 42-42 42s-41-19-41-42 18-41 41-41 42 18 42 41m583 0c0 23-18 42-41 42s-42-19-42-42 19-41 42-41 41 18 41 41m-83-416c0 23-19 41-42 41s-41-18-41-41 18-42 41-42 42 19 42 42z" horiz-adv-x="1000" />
 
 <glyph glyph-name="file-text-outline-large" unicode="&#xe900;" d="M750 767h-335c-17 0-33-7-44-18l-186-183 0 0c-11-12-18-28-18-45v-504c0-46 37-84 83-84h500c46 0 83 38 83 84v666c0 46-37 84-83 84z m-375-73v-156h-159l159 156z m417-677c0-23-19-42-42-42h-500c-23 0-42 19-42 42v479h167c23 0 42 19 42 42v187h333c23 0 42-19 42-42v-666z m-146 375h-292c-11 0-21-10-21-21s10-21 21-21h292c11 0 21 9 21 21s-10 21-21 21z m0-84h-292c-11 0-21-9-21-20s10-21 21-21h292c11 0 21 9 21 21s-10 20-21 20z m0-83h-292c-11 0-21-9-21-21s10-21 21-21h292c11 0 21 10 21 21s-10 21-21 21z m-83-83h-209c-11 0-21-10-21-21s10-21 21-21h209c11 0 20 9 20 21s-9 21-20 21z" horiz-adv-x="1000" />
 
