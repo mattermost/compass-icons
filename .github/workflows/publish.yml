@@ -6,6 +6,10 @@ on:
         types:
             - published
 
+permissions:
+    id-token: write  # Required for OIDC trusted publishing
+    contents: read
+
 # Job will run on a ubuntu instance
 jobs:
     build:
@@ -29,5 +33,3 @@ jobs:
             - name: publish to npm
               working-directory: ./build
               run: npm publish --access public
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
