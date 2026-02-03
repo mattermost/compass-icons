@@ -3913,6 +3913,20 @@
       ]
     },
     {
+      "uid": "a5d1ef774d32d09a0e9dc8988b4fedc2",
+      "css": "shield-check",
+      "code": 984421,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M416.7 708.3L250 541.7 308.8 482.9 416.7 590.4 691.3 315.8 750 375M500 41.7L125 208.3V458.3C125 689.6 285 905.8 500 958.3 715 905.8 875 689.6 875 458.3V208.3L500 41.7Z",
+        "width": 1000
+      },
+      "search": [
+        "shield-check"
+      ]
+    },
+    {
       "uid": "fb27761488c6896a0b7712b6fbf5c0ff",
       "css": "shield-outline",
       "code": 984217,
