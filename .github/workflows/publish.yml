@@ -24,8 +24,6 @@ jobs:
               with:
                   node-version: '16'
                   check-latest: true
-                  registry-url: 'https://registry.npmjs.org'
-                  scope: '@mattermost'
             - name: install dependencies
               run: npm install
             - name: build component library
