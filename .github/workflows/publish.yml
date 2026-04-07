@@ -27,7 +27,7 @@ jobs:
             - name: install npm version with trusted publishing support
               run: npm install -g npm@11.5.1
             - name: install dependencies
-              run: npm install
+              run: npm ci
             - name: build component library
               run: npm run build
             - name: publish to npm
