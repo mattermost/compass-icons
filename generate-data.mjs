@@ -1,14 +1,9 @@
-'use strict';
+import fse from 'fs-extra';
+import _ from 'lodash';
+import fs from 'node:fs';
+import path from 'node:path';
 
-const path = require('path');
-
-const fse = require('fs-extra');
-
-const fs = require('fs');
-
-const _ = require('lodash');
-
-import { getFileData, generateGlyphs, writeJSONToDisk, writeToDisk } from './utils';
+import { getFileData, generateGlyphs, writeJSONToDisk, writeToDisk } from './utils.mjs';
 
 // generate config data used to generate the font icon
 

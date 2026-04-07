@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
-import svgImageFlatten from 'fontello-batch-cli/svgflatten';
+import svgImageFlatten from 'fontello-batch-cli/svgflatten.js';
 import SVGPath from 'svgpath';
 
 export const FILE_COMPONENTS_REGEX = /^(_)?(.+)[|_](.+)\.svg$/;

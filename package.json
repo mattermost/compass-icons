@@ -8,7 +8,7 @@
         "start": "npm run build",
         "clean": "rm -rf config.json build .fontello-session fontello* node_modules",
         "build": "run-s build:data build:prettify build:typescript build:font",
-        "build:data": "node -r esm generate-data.js",
+        "build:data": "node generate-data.mjs",
         "build:prettify": "npx prettier --write .",
         "build:font": "fontello-cli --css ./build/css --font ./build/font install",
         "build:typescript": "tsc",
