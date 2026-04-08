@@ -1,6 +1,6 @@
 {
     "name": "@mattermost/compass-icons",
-    "version": "0.1.59",
+    "version": "0.1.60",
     "private": true,
     "description": "",
     "main": "build/css/compass-icons.css",
@@ -8,7 +8,7 @@
         "start": "npm run build",
         "clean": "rm -rf config.json build .fontello-session fontello* node_modules",
         "build": "run-s build:data build:prettify build:typescript build:font",
-        "build:data": "node -r esm generate-data.js",
+        "build:data": "node generate-data.mjs",
         "build:prettify": "npx prettier --write .",
         "build:font": "fontello-cli --css ./build/css --font ./build/font install",
         "build:typescript": "tsc",
@@ -25,7 +25,6 @@
     "devDependencies": {
         "@types/react": "17.0.39",
         "eslint-config-prettier": "8.4.0",
-        "esm": "3.2.25",
         "fontello-batch-cli": "4.0.0",
         "fontello-cli": "0.6.2",
         "fs-extra": "10.0.1",
