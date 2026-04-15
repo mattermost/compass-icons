@@ -63,6 +63,7 @@
 .icon-file-image-broken-outline-large:before { content: '\e90c'; } /* '' */
 .icon-file-multiple-outline-large:before { content: '\e90d'; } /* '' */
 .icon-element-of:before { content: '\e90e'; } /* '' */
+.icon-file-help-outline-large:before { content: '\e90f'; } /* '' */
 .icon-account-multiple-outline:before { content: '󰀏'; } /* '\f000f' */
 .icon-account-outline:before { content: '󰀓'; } /* '\f0013' */
 .icon-airplane:before { content: '󰀝'; } /* '\f001d' */
