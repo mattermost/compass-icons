@@ -6,7 +6,7 @@
     "main": "build/css/compass-icons.css",
     "repository": {
         "type": "git",
-        "url": "https://github.com/mattermost/compass-icons.git"
+        "url": "https://github.com/mattermost/compass-icons"
     },
     "scripts": {
         "start": "npm run build",
