@@ -1,9 +1,13 @@
 {
     "name": "@mattermost/compass-icons",
-    "version": "0.1.60",
+    "version": "0.1.61",
     "private": true,
     "description": "",
     "main": "build/css/compass-icons.css",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mattermost/compass-icons"
+    },
     "scripts": {
         "start": "npm run build",
         "clean": "rm -rf config.json build .fontello-session fontello* node_modules",
