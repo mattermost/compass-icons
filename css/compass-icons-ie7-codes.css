@@ -219,6 +219,7 @@
 .icon-logout-variant { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05fd;&nbsp;'); }
 .icon-arrow-collapse { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0615;&nbsp;'); }
 .icon-arrow-expand { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0616;&nbsp;'); }
+.icon-dialpad { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf061c;&nbsp;'); }
 .icon-help-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0625;&nbsp;'); }
 .icon-source-branch { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf062c;&nbsp;'); }
 .icon-tune { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf062e;&nbsp;'); }

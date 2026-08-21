@@ -90,6 +90,7 @@ const IconGlyphs = [
     'credit-card-outline',
     'crown-outline',
     'currency-usd',
+    'dialpad',
     'dock-left',
     'dock-window',
     'dots-horizontal',

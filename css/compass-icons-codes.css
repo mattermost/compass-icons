@@ -220,6 +220,7 @@
 .icon-logout-variant:before { content: '󰗽'; } /* '\f05fd' */
 .icon-arrow-collapse:before { content: '󰘕'; } /* '\f0615' */
 .icon-arrow-expand:before { content: '󰘖'; } /* '\f0616' */
+.icon-dialpad:before { content: '󰘜'; } /* '\f061c' */
 .icon-help-circle-outline:before { content: '󰘥'; } /* '\f0625' */
 .icon-source-branch:before { content: '󰘬'; } /* '\f062c' */
 .icon-tune:before { content: '󰘮'; } /* '\f062e' */
