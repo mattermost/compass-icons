@@ -160,6 +160,7 @@
 .icon-menu-left { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf035e;&nbsp;'); }
 .icon-menu-right { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf035f;&nbsp;'); }
 .icon-menu-up { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0360;&nbsp;'); }
+.icon-message-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0365;&nbsp;'); }
 .icon-message-text-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf036a;&nbsp;'); }
 .icon-microphone { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf036c;&nbsp;'); }
 .icon-microphone-off { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf036d;&nbsp;'); }

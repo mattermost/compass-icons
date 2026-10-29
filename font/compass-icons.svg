@@ -328,6 +328,8 @@
 
 <glyph glyph-name="menu-up" unicode="&#xf0360;" d="M292 225l208 208 208-208h-416z" horiz-adv-x="1000" />
 
+<glyph glyph-name="message-outline" unicode="&#xf0365;" d="M833 767h-666c-46 0-84-38-84-84v-750l167 167h583c46 0 84 38 84 83v500c0 46-38 84-84 84m0-584h-616l-50-50v550h666v-500z" horiz-adv-x="1000" />
+
 <glyph glyph-name="message-text-outline" unicode="&#xf036a;" d="M833 767a83 83 0 0 0 84-84v-500a83 83 0 0 0-84-83h-583l-167-167v750c0 47 38 84 84 84h666m-666-84v-548l48 48h618v500h-666m83-125h500v-83h-500v83m0-166h375v-84h-375v84z" horiz-adv-x="1000" />
 
 <glyph glyph-name="microphone" unicode="&#xf036c;" d="M500 767a125 125 0 0 0 125-125v-250a125 125 0 0 0-125-125 125 125 0 0 0-125 125v250a125 125 0 0 0 125 125m292-375c0-147-109-269-250-289v-128h-84v128c-141 20-250 142-250 289h84a208 208 0 0 1 208-209 208 208 0 0 1 208 209h84z" horiz-adv-x="1000" />

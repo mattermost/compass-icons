@@ -224,6 +224,7 @@ const IconGlyphs = [
     'message-check-outline',
     'message-check',
     'message-minus-outline',
+    'message-outline',
     'message-plus-outline',
     'message-text-outline',
     'microphone-off',

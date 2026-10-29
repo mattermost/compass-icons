@@ -161,6 +161,7 @@
 .icon-menu-left:before { content: '󰍞'; } /* '\f035e' */
 .icon-menu-right:before { content: '󰍟'; } /* '\f035f' */
 .icon-menu-up:before { content: '󰍠'; } /* '\f0360' */
+.icon-message-outline:before { content: '󰍥'; } /* '\f0365' */
 .icon-message-text-outline:before { content: '󰍪'; } /* '\f036a' */
 .icon-microphone:before { content: '󰍬'; } /* '\f036c' */
 .icon-microphone-off:before { content: '󰍭'; } /* '\f036d' */

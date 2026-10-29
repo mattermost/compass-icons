@@ -3129,6 +3129,20 @@
       ]
     },
     {
+      "uid": "000d977412141519a7e4bfb390edf647",
+      "css": "message-outline",
+      "code": 983909,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M833.3 83.3H166.7C120.8 83.3 83.3 120.8 83.3 166.7V916.7L250 750H833.3C879.2 750 916.7 712.5 916.7 666.7V166.7C916.7 120.8 879.2 83.3 833.3 83.3M833.3 666.7H216.7L166.7 716.7V166.7H833.3V666.7Z",
+        "width": 1000
+      },
+      "search": [
+        "message-outline"
+      ]
+    },
+    {
       "uid": "bebd1623214a54d0b643fb4cd7cd6f0f",
       "css": "message-plus-outline",
       "code": 987323,
