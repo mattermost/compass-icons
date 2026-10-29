@@ -115,12 +115,13 @@ Simple steps to adding new icons to the Compass Icons font
 -   Create a new branch for the new release version (e.g. "version bump")
 -   npm version patch (for minimal updates) or npm version minor or npm version major 
 -   This updates the package.json
+-   Add an entry for the new version at the top of CHANGELOG.md (version, date and the icons added, changed or removed)
 -   Publish your branch
 -   Create a pull request for the version bump
 -   Get it approved and merged in to master
 -   Once merged, go to 'Releases' and click 'Draft new release'
 -   Click 'Choose a tag' and type 0.1.39 (or the version you've created from the npm version above
 -   Give it a title with the version number (e.g. "v0.1.39")
--   Add a description of what's been added to the release
+-   Add a description of what's been added to the release (reuse the CHANGELOG.md entry)
 -   Check 'Set as the latest release'
 -   Click 'Publish release'
