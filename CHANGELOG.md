@@ -2,6 +2,10 @@
 
 All notable changes to Compass Icons are documented here. Earlier releases are listed on the [GitHub Releases](https://github.com/mattermost/compass-icons/releases) page.
 
+## 0.1.65 - 2026-11-07
+
+-   Added `power-sleep` icon
+
 ## 0.1.64 - 2026-10-29
 
 -   Added `message-outline` icon
