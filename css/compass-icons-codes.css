@@ -243,6 +243,7 @@
 .icon-table-settings:before { content: '󰠸'; } /* '\f0838' */
 .icon-settings-outline:before { content: '󰢻'; } /* '\f08bb' */
 .icon-hammer:before { content: '󰣪'; } /* '\f08ea' */
+.icon-power-sleep:before { content: '󰤄'; } /* '\f0904' */
 .icon-pin-outline:before { content: '󰤱'; } /* '\f0931' */
 .icon-clock:before { content: '󰥔'; } /* '\f0954' */
 .icon-image-outline:before { content: '󰥶'; } /* '\f0976' */

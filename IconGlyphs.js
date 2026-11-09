@@ -261,6 +261,7 @@ const IconGlyphs = [
     'plus',
     'pound',
     'power-plug-outline',
+    'power-sleep',
     'product-boards',
     'product-channels',
     'product-playbooks',
