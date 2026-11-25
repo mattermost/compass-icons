@@ -268,6 +268,7 @@
 .icon-text-box-outline:before { content: '󰧭'; } /* '\f09ed' */
 .icon-file-text-outline:before { content: '󰧮'; } /* '\f09ee' */
 .icon-layers-outline:before { content: '󰧾'; } /* '\f09fe' */
+.icon-shield-account-outline:before { content: '󰨒'; } /* '\f0a12' */
 .icon-bug-outline:before { content: '󰨰'; } /* '\f0a30' */
 .icon-city-variant-outline:before { content: '󰨷'; } /* '\f0a37' */
 .icon-table-plus:before { content: '󰩵'; } /* '\f0a75' */
@@ -293,7 +294,9 @@
 .icon-file-search-outline:before { content: '󰱽'; } /* '\f0c7d' */
 .icon-food-apple:before { content: '󰲄'; } /* '\f0c84' */
 .icon-pencil-outline:before { content: '󰲶'; } /* '\f0cb6' */
+.icon-shield-check-outline:before { content: '󰳈'; } /* '\f0cc8' */
 .icon-shield-lock-outline:before { content: '󰳌'; } /* '\f0ccc' */
+.icon-transit-connection-variant:before { content: '󰴽'; } /* '\f0d3d' */
 .icon-camera-outline:before { content: '󰵝'; } /* '\f0d5d' */
 .icon-monitor-off:before { content: '󰶐'; } /* '\f0d90' */
 .icon-closed-caption-outline:before { content: '󰶽'; } /* '\f0dbd' */
@@ -322,6 +325,7 @@
 .icon-message-plus-outline:before { content: '󱂻'; } /* '\f10bb' */
 .icon-send-outline:before { content: '󱅥'; } /* '\f1165' */
 .icon-message-minus-outline:before { content: '󱅯'; } /* '\f116f' */
+.icon-message-processing-outline:before { content: '󱅰'; } /* '\f1170' */
 .icon-school-outline:before { content: '󱆀'; } /* '\f1180' */
 .icon-crown-outline:before { content: '󱇐'; } /* '\f11d0' */
 .icon-shopping-outline:before { content: '󱇕'; } /* '\f11d5' */
@@ -341,10 +345,13 @@
 .icon-share-variant-outline:before { content: '󱔔'; } /* '\f1514' */
 .icon-office-building-outline:before { content: '󱔟'; } /* '\f151f' */
 .icon-application-cog:before { content: '󱕷'; } /* '\f1577' */
+.icon-database-outline:before { content: '󱘲'; } /* '\f1632' */
 .icon-book-lock-outline:before { content: '󱚏'; } /* '\f168f' */
 .icon-robot-happy:before { content: '󱜙'; } /* '\f1719' */
 .icon-archive-lock-outline:before { content: '󱝚'; } /* '\f175a' */
 .icon-hand-right-outline:before { content: '󱠭'; } /* '\f182d' */
 .icon-hand-right-outline-off:before { content: '󱠳'; } /* '\f1833' */
+.icon-sitemap-outline:before { content: '󱦜'; } /* '\f199c' */
 .icon-monitor-account:before { content: '󱩛'; } /* '\f1a5b' */
+.icon-folder-lock-outline:before { content: '󱪨'; } /* '\f1aa8' */
 .icon-creation-outline:before { content: '󱰫'; } /* '\f1c2b' */

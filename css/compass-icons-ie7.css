@@ -278,6 +278,7 @@
 .icon-text-box-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09ed;&nbsp;'); }
 .icon-file-text-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09ee;&nbsp;'); }
 .icon-layers-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09fe;&nbsp;'); }
+.icon-shield-account-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a12;&nbsp;'); }
 .icon-bug-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a30;&nbsp;'); }
 .icon-city-variant-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a37;&nbsp;'); }
 .icon-table-plus { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a75;&nbsp;'); }
@@ -303,7 +304,9 @@
 .icon-file-search-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c7d;&nbsp;'); }
 .icon-food-apple { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c84;&nbsp;'); }
 .icon-pencil-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0cb6;&nbsp;'); }
+.icon-shield-check-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0cc8;&nbsp;'); }
 .icon-shield-lock-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ccc;&nbsp;'); }
+.icon-transit-connection-variant { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d3d;&nbsp;'); }
 .icon-camera-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d5d;&nbsp;'); }
 .icon-monitor-off { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d90;&nbsp;'); }
 .icon-closed-caption-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0dbd;&nbsp;'); }
@@ -332,6 +335,7 @@
 .icon-message-plus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10bb;&nbsp;'); }
 .icon-send-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1165;&nbsp;'); }
 .icon-message-minus-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf116f;&nbsp;'); }
+.icon-message-processing-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1170;&nbsp;'); }
 .icon-school-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1180;&nbsp;'); }
 .icon-crown-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf11d0;&nbsp;'); }
 .icon-shopping-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf11d5;&nbsp;'); }
@@ -351,10 +355,13 @@
 .icon-share-variant-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1514;&nbsp;'); }
 .icon-office-building-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf151f;&nbsp;'); }
 .icon-application-cog { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1577;&nbsp;'); }
+.icon-database-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1632;&nbsp;'); }
 .icon-book-lock-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf168f;&nbsp;'); }
 .icon-robot-happy { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1719;&nbsp;'); }
 .icon-archive-lock-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf175a;&nbsp;'); }
 .icon-hand-right-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf182d;&nbsp;'); }
 .icon-hand-right-outline-off { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1833;&nbsp;'); }
+.icon-sitemap-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf199c;&nbsp;'); }
 .icon-monitor-account { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1a5b;&nbsp;'); }
+.icon-folder-lock-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1aa8;&nbsp;'); }
 .icon-creation-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c2b;&nbsp;'); }
