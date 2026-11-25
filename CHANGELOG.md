@@ -2,6 +2,10 @@
 
 All notable changes to Compass Icons are documented here. Earlier releases are listed on the [GitHub Releases](https://github.com/mattermost/compass-icons/releases) page.
 
+## 0.1.67 - 2026-11-25
+
+-   Added `database-outline`, `folder-lock-outline`, `message-processing-outline`, `shield-account-outline`, `shield-check-outline`, `sitemap-outline`, and `transit-connection-variant`
+
 ## 0.1.66 - 2026-11-24
 
 -   Added website icons: `arrow-top-right`, `brand-facebook`, `brand-linkedin-mark`, `brand-x`, `bug-outline`, `city-variant-outline`, `clipboard-check-outline`, `cloud-outline`, `file-search-outline`, `fingerprint`, `lifebuoy`, `office-building-outline`, `scale-balance`, `school-outline`, `shopping-outline`, `swap-horizontal`, `tools`, `trophy-outline`, `truck-outline`, and `view-dashboard-variant-outline`
