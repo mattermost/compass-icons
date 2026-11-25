@@ -182,6 +182,10 @@ const addQuadratic = (add, x0, y0, x1, y1, x2, y2) => {
 };
 
 const pathBounds = (d) => {
+    if (/[^\S \t\r\n]/.test(d)) {
+        throw new Error('path data contains non-SVG whitespace');
+    }
+
     const parsed = new SVGPath(d);
 
     if (parsed.err) {
@@ -281,7 +285,8 @@ const checkFile = (fileName, source) => {
         elements[1].selfClosing &&
         elements[2].name === 'svg' &&
         elements[2].closing &&
-        !elements[2].selfClosing;
+        !elements[2].selfClosing &&
+        trimXml(elements[2].attrs) === '';
 
     if (hasTextOutsideTags(withoutComments)) {
         problems.push('unexpected text outside the svg');
@@ -289,6 +294,10 @@ const checkFile = (fileName, source) => {
 
     if (!directChild) {
         problems.push(`svg must contain one direct path, found ${shape.join(', ') || 'nothing'}`);
+    }
+
+    if (elements[2]?.name === 'svg' && elements[2].closing && trimXml(elements[2].attrs) !== '') {
+        problems.push('closing svg tag cannot have attributes');
     }
 
     const svg = elements.find((element) => element.name === 'svg' && !element.closing);

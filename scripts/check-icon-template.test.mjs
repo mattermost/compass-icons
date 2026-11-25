@@ -26,4 +26,15 @@ assert.ok(problems(protoPath).includes('path has extra attributes: __proto__'));
 const nbsp = valid.replace(' width="24"', '\u00A0width="24"');
 assert.ok(problems(nbsp).includes('attributes must be separated by whitespace'));
 
+const nbspPath = valid.replace('M4 4', 'M4\u00A04');
+assert.ok(problems(nbspPath).includes('path data contains non-SVG whitespace'));
+
+for (const separator of [' ', '\t', '\r', '\n']) {
+    assert.deepEqual(problems(valid.replace('M4 4', `M4${separator}4`)), []);
+}
+
+const closingAttribute = valid.replace('</svg>', '</svg extra="x">');
+assert.ok(problems(closingAttribute).includes('closing svg tag cannot have attributes'));
+assert.deepEqual(problems(valid.replace('</svg>', '</svg >')), []);
+
 console.log('Icon template regression checks passed.');
