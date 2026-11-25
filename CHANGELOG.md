@@ -4,7 +4,7 @@ All notable changes to Compass Icons are documented here. Earlier releases are l
 
 ## 0.1.67 - 2026-11-25
 
--   Added `database-outline`, `message-processing-outline`, and `shield-check-outline`
+-   Added `database-outline`, `message-processing-outline`, `shield-check-outline`, and `sitemap-outline`
 
 ## 0.1.66 - 2026-11-24
 
