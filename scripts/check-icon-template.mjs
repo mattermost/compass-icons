@@ -17,22 +17,66 @@ const REQUIRED_ATTRS = {
     viewBox: '0 0 24 24',
 };
 
+const requireFinite = (values) => {
+    if (values.some((value) => !Number.isFinite(value))) {
+        throw new Error('path bounds are not finite');
+    }
+};
+
 const parseAttrs = (source) => {
     const attrs = {};
     let rest = source.trim();
 
     while (rest.length) {
-        const match = rest.match(/^([\w:-]+)\s*=\s*"([^"]*)"\s*/);
+        const match = rest.match(/^([\w:-]+)\s*=\s*"([^"]*)"/);
 
         if (!match) {
             throw new Error('attributes must use double quotes');
         }
 
+        if (Object.hasOwn(attrs, match[1])) {
+            throw new Error(`duplicate attribute ${match[1]}`);
+        }
+
         attrs[match[1]] = match[2];
         rest = rest.slice(match[0].length);
+
+        if (rest.length && !/^\s/.test(rest)) {
+            throw new Error('attributes must be separated by whitespace');
+        }
+
+        rest = rest.trim();
     }
 
     return attrs;
+};
+
+const TAG_AT_START = /^<(\/?)([A-Za-z][\w:-]*)\b([^>]*?)(\/?)>/;
+
+const hasTextOutsideTags = (source) => {
+    if (!source.startsWith(XML_HEADER)) {
+        return false;
+    }
+
+    let rest = source.slice(XML_HEADER.length).replace(/^\s*/, '');
+
+    if (!rest.startsWith(DOCTYPE)) {
+        return false;
+    }
+
+    rest = rest.slice(DOCTYPE.length).replace(/^\s*/, '');
+
+    for (let index = 0; index < 3; index += 1) {
+        const match = rest.match(TAG_AT_START);
+
+        if (!match) {
+            return rest.length > 0;
+        }
+
+        rest = rest.slice(match[0].length).replace(/^\s*/, '');
+    }
+
+    return rest.length > 0;
 };
 
 const readElements = (source) => {
@@ -56,16 +100,24 @@ const cubicExtrema = (p0, p1, p2, p3) => {
     const c = -p0 + p1;
     const roots = [];
 
+    requireFinite([a, b, c]);
+
     if (Math.abs(a) < 1e-12) {
         if (Math.abs(b) > 1e-12) {
-            roots.push(-c / b);
+            const t = -c / b;
+            requireFinite([t]);
+            roots.push(t);
         }
     } else {
         const disc = b * b - 4 * a * c;
+        requireFinite([disc]);
 
         if (disc >= 0) {
             const root = Math.sqrt(disc);
-            roots.push((-b + root) / (2 * a), (-b - root) / (2 * a));
+            const plus = (-b + root) / (2 * a);
+            const minus = (-b - root) / (2 * a);
+            requireFinite([plus, minus]);
+            roots.push(plus, minus);
         }
     }
 
@@ -87,6 +139,7 @@ const addCubic = (add, x0, y0, x1, y1, x2, y2, x3, y3) => {
 
     for (const t of [...cubicExtrema(x0, x1, x2, x3), ...cubicExtrema(y0, y1, y2, y3)]) {
         const [px, py] = point(t);
+        requireFinite([px, py]);
         add(px, py);
     }
 };
@@ -103,13 +156,16 @@ const addQuadratic = (add, x0, y0, x1, y1, x2, y2) => {
         }
 
         const t = (p0 - p1) / denom;
+        requireFinite([t]);
 
         if (t <= 0 || t >= 1) {
             return;
         }
 
         const u = 1 - t;
-        read(u * u * p0 + 2 * u * t * p1 + t * t * p2, t);
+        const value = u * u * p0 + 2 * u * t * p1 + t * t * p2;
+        requireFinite([value]);
+        read(value, t);
     };
 
     addAxis(x0, x1, x2, (x, t) => {
@@ -137,6 +193,8 @@ const pathBounds = (d) => {
 
     let x = 0;
     let y = 0;
+    let subpathX = 0;
+    let subpathY = 0;
     let minX = Infinity;
     let minY = Infinity;
     let maxX = -Infinity;
@@ -152,7 +210,13 @@ const pathBounds = (d) => {
     for (const segment of segments) {
         const command = segment[0];
 
-        if (command === 'M' || command === 'L') {
+        if (command === 'M') {
+            x = segment[1];
+            y = segment[2];
+            subpathX = x;
+            subpathY = y;
+            add(x, y);
+        } else if (command === 'L') {
             x = segment[1];
             y = segment[2];
             add(x, y);
@@ -175,7 +239,8 @@ const pathBounds = (d) => {
             y = segment[4];
             addQuadratic(add, x0, y0, segment[1], segment[2], x, y);
         } else if (command === 'Z') {
-            continue;
+            x = subpathX;
+            y = subpathY;
         } else {
             throw new Error(`unsupported path command ${command}`);
         }
@@ -207,10 +272,17 @@ const checkFile = (fileName, source) => {
         elements.length === 3 &&
         elements[0].name === 'svg' &&
         !elements[0].closing &&
+        !elements[0].selfClosing &&
         elements[1].name === 'path' &&
+        !elements[1].closing &&
         elements[1].selfClosing &&
         elements[2].name === 'svg' &&
-        elements[2].closing;
+        elements[2].closing &&
+        !elements[2].selfClosing;
+
+    if (hasTextOutsideTags(withoutComments)) {
+        problems.push('unexpected text outside the svg');
+    }
 
     if (!directChild) {
         problems.push(`svg must contain one direct path, found ${shape.join(', ') || 'nothing'}`);
@@ -221,7 +293,7 @@ const checkFile = (fileName, source) => {
     if (svg) {
         try {
             const attrs = parseAttrs(svg.attrs);
-            const extra = Object.keys(attrs).filter((name) => !(name in REQUIRED_ATTRS));
+            const extra = Object.keys(attrs).filter((name) => !Object.hasOwn(REQUIRED_ATTRS, name));
 
             for (const [name, value] of Object.entries(REQUIRED_ATTRS)) {
                 if (attrs[name] !== value) {
@@ -283,14 +355,19 @@ for (const fileName of fileNames) {
 
     if (codeMatch) {
         const code = parseInt(codeMatch[1], 16);
+        const scalar = Number.isSafeInteger(code) && code >= 0 && code <= 0x10ffff && (code < 0xd800 || code > 0xdfff);
 
-        if (seenCodes.has(code)) {
+        if (!scalar) {
+            failures.push(`${fileName}: code ${codeMatch[1]} is not a Unicode scalar`);
+        } else if (seenCodes.has(code)) {
             failures.push(
                 `${fileName}: code ${code.toString(16).toUpperCase()} is already used by ${seenCodes.get(code)}`
             );
         }
 
-        seenCodes.set(code, fileName);
+        if (scalar) {
+            seenCodes.set(code, fileName);
+        }
     }
 
     if (seenNames.has(iconName)) {
