@@ -1,6 +1,6 @@
 {
     "name": "@mattermost/compass-icons",
-    "version": "0.1.65",
+    "version": "0.1.66",
     "private": true,
     "description": "",
     "main": "build/css/compass-icons.css",
@@ -16,6 +16,7 @@
         "build:prettify": "npx prettier --write .",
         "build:font": "fontello-cli --css ./build/css --font ./build/font install",
         "build:typescript": "tsc",
+        "check:icons": "node scripts/check-icon-template.mjs && node scripts/check-icon-template.test.mjs",
         "open": "run-s build:data open:font",
         "open:font": "fontello-cli open"
     },

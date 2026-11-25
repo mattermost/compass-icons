@@ -2,6 +2,12 @@
 
 All notable changes to Compass Icons are documented here. Earlier releases are listed on the [GitHub Releases](https://github.com/mattermost/compass-icons/releases) page.
 
+## 0.1.66 - 2026-11-24
+
+-   Added website icons: `arrow-top-right`, `brand-facebook`, `brand-linkedin-mark`, `brand-x`, `bug-outline`, `city-variant-outline`, `clipboard-check-outline`, `cloud-outline`, `file-search-outline`, `fingerprint`, `lifebuoy`, `office-building-outline`, `scale-balance`, `school-outline`, `shopping-outline`, `swap-horizontal`, `tools`, `trophy-outline`, `truck-outline`, and `view-dashboard-variant-outline`
+-   Added a CI check that icon SVGs follow the 24×24 single-path template
+-   Brought 24 existing icons onto that template
+
 ## 0.1.65 - 2026-11-07
 
 -   Added `power-sleep` icon
