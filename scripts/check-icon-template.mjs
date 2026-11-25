@@ -17,34 +17,6 @@ const REQUIRED_ATTRS = {
     viewBox: '0 0 24 24',
 };
 
-// Icons already in the set that do not match the template. New files are not added here.
-const LEGACY = new Set([
-    'account-multiple-outline_F000F.svg',
-    'account-outline_F0013.svg',
-    'account-plus-outline_F0801.svg',
-    'arrow-back-ios_E811.svg',
-    'arrow-forward-ios_E812.svg',
-    'calendar-outline_F0B67.svg',
-    'clock-send-outline_E836.svg',
-    'code-block_ E835.svg',
-    'drag-vertical_ F01DD.svg',
-    'format-bold_F0264.svg',
-    'format-clear_F0265.svg',
-    'format-italic_F0277.svg',
-    'format-strikethrough-variant_F0281.svg',
-    'image-broken-outline_E81C.svg',
-    'import_F02FA.svg',
-    'key-variant_f030b.svg',
-    'play-box-multiple-outline_F13E6.svg',
-    'product-boards_0xe82e.svg',
-    'product-channels_0xe82c.svg',
-    'product-playbooks_0xe82d.svg',
-    'restore_F099B.svg',
-    'settings-outline_F08BB.svg',
-    'text-box-outline_F09ED.svg',
-    'upload-outline_F0E07.svg',
-]);
-
 const parseAttrs = (source) => {
     const attrs = {};
 
@@ -188,7 +160,6 @@ const fileNames = fs
 const seenNames = new Map();
 const seenCodes = new Map();
 const failures = [];
-const staleLegacy = [];
 
 for (const fileName of fileNames) {
     const codeMatch = fileName.match(/_([0-9A-Fa-f]+)\.svg$/);
@@ -211,31 +182,10 @@ for (const fileName of fileNames) {
     seenNames.set(iconName, fileName);
 
     const source = fs.readFileSync(path.join(SVG_DIR, fileName), 'utf8');
-    const problems = checkFile(fileName, source);
 
-    if (LEGACY.has(fileName)) {
-        if (problems.length === 0) {
-            staleLegacy.push(fileName);
-        }
-
-        continue;
-    }
-
-    for (const problem of problems) {
+    for (const problem of checkFile(fileName, source)) {
         failures.push(`${fileName}: ${problem}`);
     }
-}
-
-for (const fileName of LEGACY) {
-    if (!fileNames.includes(fileName)) {
-        failures.push(`${fileName}: listed as a legacy exception, but the file is gone`);
-    }
-}
-
-if (staleLegacy.length) {
-    failures.push(
-        `these legacy exceptions now match the template and should be removed from the list: ${staleLegacy.join(', ')}`
-    );
 }
 
 if (failures.length) {
@@ -248,4 +198,4 @@ if (failures.length) {
     process.exit(1);
 }
 
-console.log(`Icon template check passed (${fileNames.length} icons, ${LEGACY.size} legacy exceptions).`);
+console.log(`Icon template check passed (${fileNames.length} icons).`);
