@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 import SVGPath from 'svgpath';
 
@@ -23,12 +24,14 @@ const requireFinite = (values) => {
     }
 };
 
+const trimXml = (value) => value.replace(/^[ \t\r\n]+/, '').replace(/[ \t\r\n]+$/, '');
+
 const parseAttrs = (source) => {
-    const attrs = {};
-    let rest = source.trim();
+    const attrs = Object.create(null);
+    let rest = trimXml(source);
 
     while (rest.length) {
-        const match = rest.match(/^([\w:-]+)\s*=\s*"([^"]*)"/);
+        const match = rest.match(/^([\w:-]+)[ \t\r\n]*=[ \t\r\n]*"([^"]*)"/);
 
         if (!match) {
             throw new Error('attributes must use double quotes');
@@ -41,11 +44,11 @@ const parseAttrs = (source) => {
         attrs[match[1]] = match[2];
         rest = rest.slice(match[0].length);
 
-        if (rest.length && !/^\s/.test(rest)) {
+        if (rest.length && !/^[ \t\r\n]/.test(rest)) {
             throw new Error('attributes must be separated by whitespace');
         }
 
-        rest = rest.trim();
+        rest = trimXml(rest);
     }
 
     return attrs;
@@ -58,13 +61,13 @@ const hasTextOutsideTags = (source) => {
         return false;
     }
 
-    let rest = source.slice(XML_HEADER.length).replace(/^\s*/, '');
+    let rest = source.slice(XML_HEADER.length).replace(/^[ \t\r\n]*/, '');
 
     if (!rest.startsWith(DOCTYPE)) {
-        return false;
+        return rest.length > 0;
     }
 
-    rest = rest.slice(DOCTYPE.length).replace(/^\s*/, '');
+    rest = rest.slice(DOCTYPE.length).replace(/^[ \t\r\n]*/, '');
 
     for (let index = 0; index < 3; index += 1) {
         const match = rest.match(TAG_AT_START);
@@ -73,7 +76,7 @@ const hasTextOutsideTags = (source) => {
             return rest.length > 0;
         }
 
-        rest = rest.slice(match[0].length).replace(/^\s*/, '');
+        rest = rest.slice(match[0].length).replace(/^[ \t\r\n]*/, '');
     }
 
     return rest.length > 0;
@@ -341,56 +344,63 @@ const checkFile = (fileName, source) => {
     return problems;
 };
 
-const fileNames = fs
-    .readdirSync(SVG_DIR)
-    .filter((name) => name.endsWith('.svg'))
-    .sort();
-const seenNames = new Map();
-const seenCodes = new Map();
-const failures = [];
+const isDirectRun = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 
-for (const fileName of fileNames) {
-    const codeMatch = fileName.match(/_([0-9A-Fa-f]+)\.svg$/);
-    const iconName = fileName.replace(/\.svg$/, '').replace(/_([0-9A-Fa-f]+)$/, '');
+if (isDirectRun) {
+    const fileNames = fs
+        .readdirSync(SVG_DIR)
+        .filter((name) => name.endsWith('.svg'))
+        .sort();
+    const seenNames = new Map();
+    const seenCodes = new Map();
+    const failures = [];
 
-    if (codeMatch) {
-        const code = parseInt(codeMatch[1], 16);
-        const scalar = Number.isSafeInteger(code) && code >= 0 && code <= 0x10ffff && (code < 0xd800 || code > 0xdfff);
+    for (const fileName of fileNames) {
+        const codeMatch = fileName.match(/_([0-9A-Fa-f]+)\.svg$/);
+        const iconName = fileName.replace(/\.svg$/, '').replace(/_([0-9A-Fa-f]+)$/, '');
 
-        if (!scalar) {
-            failures.push(`${fileName}: code ${codeMatch[1]} is not a Unicode scalar`);
-        } else if (seenCodes.has(code)) {
-            failures.push(
-                `${fileName}: code ${code.toString(16).toUpperCase()} is already used by ${seenCodes.get(code)}`
-            );
+        if (codeMatch) {
+            const code = parseInt(codeMatch[1], 16);
+            const scalar =
+                Number.isSafeInteger(code) && code >= 0 && code <= 0x10ffff && (code < 0xd800 || code > 0xdfff);
+
+            if (!scalar) {
+                failures.push(`${fileName}: code ${codeMatch[1]} is not a Unicode scalar`);
+            } else if (seenCodes.has(code)) {
+                failures.push(
+                    `${fileName}: code ${code.toString(16).toUpperCase()} is already used by ${seenCodes.get(code)}`
+                );
+            }
+
+            if (scalar) {
+                seenCodes.set(code, fileName);
+            }
         }
 
-        if (scalar) {
-            seenCodes.set(code, fileName);
+        if (seenNames.has(iconName)) {
+            failures.push(`${fileName}: name ${iconName} is already used by ${seenNames.get(iconName)}`);
+        }
+
+        seenNames.set(iconName, fileName);
+
+        const source = fs.readFileSync(path.join(SVG_DIR, fileName), 'utf8');
+
+        for (const problem of checkFile(fileName, source)) {
+            failures.push(`${fileName}: ${problem}`);
         }
     }
 
-    if (seenNames.has(iconName)) {
-        failures.push(`${fileName}: name ${iconName} is already used by ${seenNames.get(iconName)}`);
+    if (failures.length) {
+        console.error(`Icon template check failed (${failures.length}):`);
+
+        for (const failure of failures) {
+            console.error(`- ${failure}`);
+        }
+
+        process.exit(1);
     }
 
-    seenNames.set(iconName, fileName);
-
-    const source = fs.readFileSync(path.join(SVG_DIR, fileName), 'utf8');
-
-    for (const problem of checkFile(fileName, source)) {
-        failures.push(`${fileName}: ${problem}`);
-    }
+    console.log(`Icon template check passed (${fileNames.length} icons).`);
 }
 
-if (failures.length) {
-    console.error(`Icon template check failed (${failures.length}):`);
-
-    for (const failure of failures) {
-        console.error(`- ${failure}`);
-    }
-
-    process.exit(1);
-}
-
-console.log(`Icon template check passed (${fileNames.length} icons).`);
+export { checkFile };
