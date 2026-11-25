@@ -54,6 +54,82 @@ const parseAttrs = (source) => {
     return attrs;
 };
 
+const commentInTag = (source) => {
+    let index = 0;
+    let inTag = false;
+
+    while (index < source.length) {
+        if (!inTag) {
+            if (source.startsWith('<!--', index)) {
+                const end = source.indexOf('-->', index + 4);
+
+                if (end === -1) {
+                    return 'unclosed comment';
+                }
+
+                index = end + 3;
+                continue;
+            }
+
+            if (source.startsWith('<?', index)) {
+                const end = source.indexOf('?>', index + 2);
+
+                if (end === -1) {
+                    return 'unclosed declaration';
+                }
+
+                index = end + 2;
+                continue;
+            }
+
+            if (source.startsWith('<!DOCTYPE', index)) {
+                const end = source.indexOf('>', index + 9);
+
+                if (end === -1) {
+                    return 'unclosed doctype';
+                }
+
+                index = end + 1;
+                continue;
+            }
+
+            if (source[index] === '<') {
+                inTag = true;
+            }
+
+            index += 1;
+            continue;
+        }
+
+        if (source.startsWith('<!--', index)) {
+            return 'comment inside a tag';
+        }
+
+        if (source[index] === '"') {
+            index += 1;
+
+            while (index < source.length && source[index] !== '"') {
+                if (source.startsWith('<!--', index)) {
+                    return 'comment inside a tag';
+                }
+
+                index += 1;
+            }
+
+            index += 1;
+            continue;
+        }
+
+        if (source[index] === '>') {
+            inTag = false;
+        }
+
+        index += 1;
+    }
+
+    return null;
+};
+
 const TAG_AT_START = /^<(\/?)([A-Za-z][\w:-]*)\b([^>]*?)(\/?)>/;
 
 const hasTextOutsideTags = (source) => {
@@ -271,7 +347,13 @@ const checkFile = (fileName, source) => {
         problems.push('missing the standard XML header or doctype');
     }
 
-    const withoutComments = source.replace(/<!--[\s\S]*?-->/g, '');
+    const commentProblem = commentInTag(source);
+
+    if (commentProblem) {
+        problems.push(commentProblem);
+    }
+
+    const withoutComments = commentProblem ? source : source.replace(/<!--[\s\S]*?-->/g, '');
     const elements = readElements(withoutComments);
     const pathElement = elements.find((element) => element.name === 'path' && !element.closing);
     const shape = elements.filter((element) => !element.closing).map((element) => element.name);

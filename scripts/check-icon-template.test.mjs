@@ -43,4 +43,14 @@ assert.equal(extractComponentInner(valid), path);
 assert.equal(extractComponentInner(spacedClose), null);
 assert.equal(extractComponentInner(closingAttribute), null);
 
+const commentInName = valid.replace('<path ', '<pa<!--x-->th ');
+assert.ok(problems(commentInName).includes('comment inside a tag'));
+assert.notEqual(extractComponentInner(commentInName), path);
+
+const commentInValue = valid.replace('M4 4', 'M4 <!--x--> 4');
+assert.ok(problems(commentInValue).includes('comment inside a tag'));
+
+const commentBetween = valid.replace(svgOpen, `${svgOpen}<!-- note -->`);
+assert.deepEqual(problems(commentBetween), []);
+
 console.log('Icon template regression checks passed.');
