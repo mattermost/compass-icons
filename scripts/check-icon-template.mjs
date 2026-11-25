@@ -286,7 +286,7 @@ const checkFile = (fileName, source) => {
         elements[2].name === 'svg' &&
         elements[2].closing &&
         !elements[2].selfClosing &&
-        trimXml(elements[2].attrs) === '';
+        elements[2].attrs === '';
 
     if (hasTextOutsideTags(withoutComments)) {
         problems.push('unexpected text outside the svg');
@@ -296,8 +296,8 @@ const checkFile = (fileName, source) => {
         problems.push(`svg must contain one direct path, found ${shape.join(', ') || 'nothing'}`);
     }
 
-    if (elements[2]?.name === 'svg' && elements[2].closing && trimXml(elements[2].attrs) !== '') {
-        problems.push('closing svg tag cannot have attributes');
+    if (elements[2]?.name === 'svg' && elements[2].closing && elements[2].attrs !== '') {
+        problems.push('closing svg tag must be </svg>');
     }
 
     const svg = elements.find((element) => element.name === 'svg' && !element.closing);

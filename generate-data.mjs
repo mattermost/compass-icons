@@ -2,13 +2,16 @@ import fse from 'fs-extra';
 import _ from 'lodash';
 import fs from 'node:fs';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 import { getFileData, generateGlyphs, writeJSONToDisk, writeToDisk } from './utils.mjs';
 
+const isDirectRun = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+
 // generate config data used to generate the font icon
 
-const files = getFileData('./svgs');
-const glyphs = generateGlyphs(files);
+const files = isDirectRun ? getFileData('./svgs') : [];
+const glyphs = isDirectRun ? generateGlyphs(files) : [];
 
 const packagePath = process.cwd();
 const buildPath = path.join(packagePath, './build');
@@ -27,11 +30,13 @@ const configData = {
 
 const formatToPascalCase = (str) => _.camelCase(str).replace(/^(.)/, _.toUpper);
 
-// write to root for fontelle-cli to retrieve
-writeJSONToDisk('config.json', configData);
+if (isDirectRun) {
+    // write to root for fontelle-cli to retrieve
+    writeJSONToDisk('config.json', configData);
 
-// write to build folder
-writeJSONToDisk('./build/config.json', configData);
+    // write to build folder
+    writeJSONToDisk('./build/config.json', configData);
+}
 
 // generate icon glyph data
 
@@ -49,7 +54,22 @@ export type NonBrokenIconGlyphTypes = ${iconGlyphs
 export default IconGlyphs;
 `;
 
-writeToDisk('./IconGlyphs.ts', iconGlyphsData);
+if (isDirectRun) {
+    writeToDisk('./IconGlyphs.ts', iconGlyphsData);
+}
+
+export const extractComponentInner = (fileData) => {
+    const regex = /(?<group>(?<starttag><(?<tagname>svg)[^>]*>)(?<data>.*|\n*)(?<endtag><\/\3>))/gmsu;
+    const result = regex.exec(fileData);
+
+    if (!result?.groups) {
+        return null;
+    }
+
+    const classRegex = /class=".*?"/gmu;
+
+    return result.groups.data.replace(classRegex, '').replace('\n', '').replace('\t', '');
+};
 
 const componentTemplate = ({ name, content }) => `import React from 'react';
 import IconProps from './props';
@@ -100,25 +120,20 @@ const generateComponents = async () => {
 
 const readAndWriteFiles = (item) =>
     new Promise((resolve, reject) => {
-        const regex = /(?<group>(?<starttag><(?<tagname>svg)[^>]*>)(?<data>.*|\n*)(?<endtag><\/\3>))/gmsu;
-
         const fileData = fs.readFileSync(path.join(svgPath, item.fileName), { encoding: 'utf-8' });
-        const result = regex.exec(fileData);
+        const inner = extractComponentInner(fileData);
 
-        if (result === null) {
+        if (inner === null) {
             reject(item.fileName);
+            return;
         }
 
-        if (result) {
-            const classRegex = /class=".*?"/gmu;
-            const sanitizedResult = result.groups.data.replace(classRegex, '').replace('\n', '').replace('\t', '');
-            fs.writeFile(
-                path.join(componentPath, `${item.original}.tsx`),
-                componentTemplate({ name: item.pascalName, content: sanitizedResult }),
-                () => {}
-            );
-            resolve(item.fileName);
-        }
+        fs.writeFile(
+            path.join(componentPath, `${item.original}.tsx`),
+            componentTemplate({ name: item.pascalName, content: inner }),
+            () => {}
+        );
+        resolve(item.fileName);
     });
 
 const createComponentIndex = (files) =>
@@ -169,6 +184,8 @@ async function createPackageFile() {
     console.log(`Created package.json in ${targetPath}`);
 }
 
-createPackageFile()
-    .then(() => generateComponents())
-    .then(() => console.log('### Finished creating the project files'));
+if (isDirectRun) {
+    createPackageFile()
+        .then(() => generateComponents())
+        .then(() => console.log('### Finished creating the project files'));
+}

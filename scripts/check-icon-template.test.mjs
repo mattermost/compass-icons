@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 
+import { extractComponentInner } from '../generate-data.mjs';
 import { checkFile } from './check-icon-template.mjs';
 
 const name = 'example_E800.svg';
@@ -34,7 +35,12 @@ for (const separator of [' ', '\t', '\r', '\n']) {
 }
 
 const closingAttribute = valid.replace('</svg>', '</svg extra="x">');
-assert.ok(problems(closingAttribute).includes('closing svg tag cannot have attributes'));
-assert.deepEqual(problems(valid.replace('</svg>', '</svg >')), []);
+assert.ok(problems(closingAttribute).includes('closing svg tag must be </svg>'));
+
+const spacedClose = valid.replace('</svg>', '</svg >');
+assert.ok(problems(spacedClose).includes('closing svg tag must be </svg>'));
+assert.equal(extractComponentInner(valid), path);
+assert.equal(extractComponentInner(spacedClose), null);
+assert.equal(extractComponentInner(closingAttribute), null);
 
 console.log('Icon template regression checks passed.');
