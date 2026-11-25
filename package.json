@@ -1,6 +1,6 @@
 {
     "name": "@mattermost/compass-icons",
-    "version": "0.1.66",
+    "version": "0.1.67",
     "private": true,
     "description": "",
     "main": "build/css/compass-icons.css",
